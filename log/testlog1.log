@@ -1,0 +1,12 @@
+2017-04-27 09:19:46,964 [main] INFO testcases.NewsTest - || News Before Class, thread: main
+2017-04-27 09:19:46,970 [main] INFO pages.BasePage - Driver is null at this point of time
+2017-04-27 09:19:46,971 [main] INFO pages.BasePage - fetched all properties
+2017-04-27 09:19:46,971 [main] INFO pages.BasePage - Running with firefox driver
+2017-04-27 09:19:46,972 [main] INFO helper.DriverRepo$1 - Current OS: Mac OS X
+2017-04-27 09:19:46,973 [main] INFO helper.DriverRepo$1 - MAC: FF initialized
+2017-04-27 09:19:49,626 [main] INFO pages.BasePage - fetched all properties
+2017-04-27 09:19:49,633 [main] INFO testcases.NewsTest - || News Page Test 1, thread : main
+2017-04-27 09:19:49,634 [main] INFO pages.BasePage - open url: https://www.bing.com/
+2017-04-27 09:19:50,177 [main] INFO testcases.NewsTest - || News Page Test 2, thread : main
+2017-04-27 09:19:50,177 [main] INFO pages.BasePage - open url: http://www.msn.com/en-in/
+2017-04-27 09:19:51,481 [main] INFO pages.BasePage - quit application
