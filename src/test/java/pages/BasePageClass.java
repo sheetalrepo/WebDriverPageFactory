@@ -28,24 +28,25 @@ import org.apache.commons.io.FileUtils;
  * contains all static general methods
  * reading property file + driver repo 
  */
-public class BasePage {
+public class BasePageClass {
 
     WebDriver driver = null;
     //private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
-	PropertyFileReader propertiesReader = null;
+	
+    PropertyFileReader propertiesReader = null;
 	Map<String, String> propertyMap;
 	String driverToRun = null;
 	Logger log = Logger.getLogger(getClass());
 
 	// singleton implemented
-	private static BasePage instance = null;
+	private static BasePageClass instance = null;
 
-	public static BasePage getInstance() throws MalformedURLException {
+	public static BasePageClass getInstance() throws MalformedURLException {
 		PropertyConfigurator.configure("log4j.properties");
 
-		if (instance == null) {
-			instance = new BasePage();
-		}
+		//if (instance == null) {
+			instance = new BasePageClass();
+		//}
 		return instance;
 	}
 

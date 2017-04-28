@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import pages.BasePage;
+import pages.BasePageClass;
 import pages.FlightStatusPage;
 //import pages.FlightSchedules;
 import pages.HomePage;
@@ -23,7 +23,7 @@ public class FlightStatusPageTests {
 	WebDriver driver;
 	Map<String, String> propertyMap;
 
-	BasePage basePage;
+	BasePageClass basePage;
 	HomePage homePage;
 	FlightStatusPage flightStatusPage;
 
@@ -35,7 +35,7 @@ public class FlightStatusPageTests {
 
 		log.info("|| Flight Before Class, thread:  " + Thread.currentThread().getName());
 
-		basePage = BasePage.getInstance();
+		basePage = BasePageClass.getInstance();
 		basePage.getDriver();
 		propertyMap = basePage.getProperties();
 

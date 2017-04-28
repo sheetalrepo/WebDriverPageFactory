@@ -14,17 +14,17 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import helper.PropertyFileReader;
-import pages.BasePage;
+import pages.BasePageClass;
 import pages.FlightStatusPage;
 import pages.HomePage;
 import pages.HotelsPage;
 
-public class NewsTest {
+public class NewsTests {
 
 	WebDriver driver;
 	Map<String, String> propertyMap;
 
-	BasePage basePage;
+	BasePageClass basePage;
 	HomePage homePage;
 	HotelsPage hotelsPage;
 	FlightStatusPage flightStatusPage;
@@ -38,7 +38,7 @@ public class NewsTest {
 		log.debug("I AM DEBUG");
 		
 
-		basePage = BasePage.getInstance();
+		basePage = BasePageClass.getInstance();
 		// driver = basePage.getDriver();
 		basePage.getDriver();
 		propertyMap = basePage.getProperties();
@@ -51,7 +51,7 @@ public class NewsTest {
 		// Thread.sleep(5000);
 
 		basePage.quit();
-		// basePage.close();
+		//basePage.close();
 	}
 
 	@Test
@@ -66,7 +66,7 @@ public class NewsTest {
 		log.info("|| News Page Test 2, thread : " + Thread.currentThread().getName());
 		basePage.get("http://www.msn.com/en-in/");
 //		Thread.sleep(1000);
-		Assert.assertTrue(false);
+//		Assert.assertTrue(false);
 		Thread.sleep(1000);
 	}
 

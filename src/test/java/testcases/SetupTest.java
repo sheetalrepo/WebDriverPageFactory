@@ -4,7 +4,7 @@ import java.net.MalformedURLException;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeSuite;
-import pages.BasePage;
+import pages.BasePageClass;
 import pages.HomePage;
 
 /*

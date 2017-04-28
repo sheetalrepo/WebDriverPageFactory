@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class FlightStatusPage extends BasePage {
+public class FlightStatusPage extends BasePageClass {
 
 	
 	/**

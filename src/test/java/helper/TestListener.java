@@ -6,7 +6,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import pages.BasePage;
+import pages.BasePageClass;
 
 public class TestListener implements ITestListener {
 
@@ -20,7 +20,7 @@ public class TestListener implements ITestListener {
 		String testname = result.getName().toString().trim();
 		
 		try {
-			BasePage.getInstance().getScreenshot(testclass, testname);
+			BasePageClass.getInstance().getScreenshot(testclass, testname);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

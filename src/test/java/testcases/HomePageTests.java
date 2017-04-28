@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import helper.PropertyFileReader;
-import pages.BasePage;
+import pages.BasePageClass;
 import pages.FlightStatusPage;
 import pages.HomePage;
 import pages.HotelsPage;
@@ -24,7 +24,7 @@ public class HomePageTests {
 	WebDriver driver;
 	Map<String, String> propertyMap;
 
-	BasePage basePage;
+	BasePageClass basePage;
 	HomePage homePage;
 	HotelsPage hotelsPage;
 	FlightStatusPage flightStatusPage;
@@ -36,7 +36,7 @@ public class HomePageTests {
 		PropertyConfigurator.configure("log4j.properties");
 		log.info("|| Homepage Before Class: " + Thread.currentThread().getName());
 
-		basePage = BasePage.getInstance();
+		basePage = BasePageClass.getInstance();
 		// driver = basePage.getDriver();
 		basePage.getDriver();
 		propertyMap = basePage.getProperties();
@@ -72,8 +72,8 @@ public class HomePageTests {
 		// Assert.assertTrue(flightStatusPage.isFlightStatusPageLoaded(),
 		// "Flight Status page not loaded");
 
-		// driver.get(propertyMap.get("server"));
-		basePage.get(propertyMap.get("server"));
+		//basePage.get(propertyMap.get("server"));
+		basePage.get("https://www.google.com/");
 	}
 
 	@Test
