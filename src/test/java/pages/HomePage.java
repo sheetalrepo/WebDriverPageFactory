@@ -31,8 +31,8 @@ public class HomePage extends BasePage {
 	
 	
 	//default constructor
-	public HomePage() throws MalformedURLException {
-		super();
+	public HomePage()  {
+		//super();
 	}
 
 

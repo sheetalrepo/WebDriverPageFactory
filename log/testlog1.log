@@ -10,3 +10,76 @@
 2017-04-27 09:19:50,177 [main] INFO testcases.NewsTest - || News Page Test 2, thread : main
 2017-04-27 09:19:50,177 [main] INFO pages.BasePage - open url: http://www.msn.com/en-in/
 2017-04-27 09:19:51,481 [main] INFO pages.BasePage - quit application
+2017-04-27 12:41:12,725 [main] INFO testcases.NewsTest - || News Before Class, thread: main
+2017-04-27 12:41:12,732 [main] INFO pages.BasePage - Driver is null at this point of time
+2017-04-27 12:41:12,733 [main] INFO pages.BasePage - fetched all properties
+2017-04-27 12:41:12,733 [main] INFO pages.BasePage - Running with firefox driver
+2017-04-27 12:41:12,735 [main] INFO helper.DriverRepo$1 - Current OS: Mac OS X
+2017-04-27 12:41:12,735 [main] INFO helper.DriverRepo$1 - MAC: FF initialized
+2017-04-27 12:41:15,407 [main] INFO pages.BasePage - fetched all properties
+2017-04-27 12:41:15,413 [main] INFO testcases.NewsTest - || News Page Test 1, thread : main
+2017-04-27 12:41:15,413 [main] INFO pages.BasePage - open url: https://www.bing.com/
+2017-04-27 12:41:16,219 [main] INFO testcases.NewsTest - || News Page Test 2, thread : main
+2017-04-27 12:41:16,219 [main] INFO pages.BasePage - open url: http://www.msn.com/en-in/
+2017-04-27 12:41:19,806 [main] INFO pages.BasePage - quit application
+2017-04-27 12:43:38,410 [main] INFO testcases.NewsTest - || News Before Class, thread: main
+2017-04-27 12:43:38,416 [main] INFO pages.BasePage - Driver is null at this point of time
+2017-04-27 12:43:38,416 [main] INFO pages.BasePage - fetched all properties
+2017-04-27 12:43:38,417 [main] INFO pages.BasePage - Running with firefox driver
+2017-04-27 12:43:38,418 [main] INFO helper.DriverRepo$1 - Current OS: Mac OS X
+2017-04-27 12:43:38,418 [main] INFO helper.DriverRepo$1 - MAC: FF initialized
+2017-04-27 12:43:41,046 [main] INFO pages.BasePage - fetched all properties
+2017-04-27 12:43:41,054 [main] INFO testcases.NewsTest - || News Page Test 1, thread : main
+2017-04-27 12:43:41,054 [main] INFO pages.BasePage - open url: https://www.bing.com/
+2017-04-27 12:43:41,992 [main] INFO testcases.NewsTest - || News Page Test 2, thread : main
+2017-04-27 12:43:41,992 [main] INFO pages.BasePage - open url: http://www.msn.com/en-in/
+2017-04-27 12:43:50,020 [main] INFO pages.BasePage - quit application
+2017-04-27 12:48:04,748 [main] INFO testcases.NewsTest - || News Before Class, thread: main
+2017-04-27 12:48:04,754 [main] INFO pages.BasePage - Driver is null at this point of time
+2017-04-27 12:48:04,755 [main] INFO pages.BasePage - fetched all properties
+2017-04-27 12:48:04,755 [main] INFO pages.BasePage - Running with firefox driver
+2017-04-27 12:48:04,757 [main] INFO helper.DriverRepo$1 - Current OS: Mac OS X
+2017-04-27 12:48:04,757 [main] INFO helper.DriverRepo$1 - MAC: FF initialized
+2017-04-27 12:48:07,533 [main] INFO pages.BasePage - fetched all properties
+2017-04-27 12:48:07,539 [main] INFO testcases.NewsTest - || News Page Test 1, thread : main
+2017-04-27 12:48:07,539 [main] INFO pages.BasePage - open url: https://www.bing.com/
+2017-04-27 12:48:08,085 [main] INFO testcases.NewsTest - || News Page Test 2, thread : main
+2017-04-27 12:48:08,086 [main] INFO pages.BasePage - open url: http://www.msn.com/en-in/
+2017-04-27 12:48:11,190 [main] INFO pages.BasePage - quit application
+2017-04-27 12:49:03,140 [main] INFO testcases.NewsTest - || News Before Class, thread: main
+2017-04-27 12:49:03,147 [main] INFO pages.BasePage - Driver is null at this point of time
+2017-04-27 12:49:03,148 [main] INFO pages.BasePage - fetched all properties
+2017-04-27 12:49:03,148 [main] INFO pages.BasePage - Running with firefox driver
+2017-04-27 12:49:03,150 [main] INFO helper.DriverRepo$1 - Current OS: Mac OS X
+2017-04-27 12:49:03,150 [main] INFO helper.DriverRepo$1 - MAC: FF initialized
+2017-04-27 12:49:05,850 [main] INFO pages.BasePage - fetched all properties
+2017-04-27 12:49:05,858 [main] INFO testcases.NewsTest - || News Page Test 1, thread : main
+2017-04-27 12:49:05,858 [main] INFO pages.BasePage - open url: https://www.bing.com/
+2017-04-27 12:49:06,428 [main] INFO testcases.NewsTest - || News Page Test 2, thread : main
+2017-04-27 12:49:06,428 [main] INFO pages.BasePage - open url: http://www.msn.com/en-in/
+2017-04-27 12:49:09,475 [main] INFO pages.BasePage - quit application
+2017-04-28 05:36:35,586 [main] INFO testcases.NewsTest - || News Before Class, thread: main
+2017-04-28 05:36:35,592 [main] INFO pages.BasePage - Driver is null at this point of time
+2017-04-28 05:36:35,599 [main] INFO pages.BasePage - fetched all properties
+2017-04-28 05:36:35,600 [main] INFO pages.BasePage - Running with firefox driver
+2017-04-28 05:36:35,602 [main] INFO helper.DriverRepo$1 - Current OS: Mac OS X
+2017-04-28 05:36:35,603 [main] INFO helper.DriverRepo$1 - MAC: FF initialized
+2017-04-28 05:36:39,079 [main] INFO pages.BasePage - fetched all properties
+2017-04-28 05:36:39,086 [main] INFO testcases.NewsTest - || News Page Test 1, thread : main
+2017-04-28 05:36:39,086 [main] INFO pages.BasePage - open url: https://www.bing.com/
+2017-04-28 05:36:40,154 [main] INFO testcases.NewsTest - || News Page Test 2, thread : main
+2017-04-28 05:36:40,155 [main] INFO pages.BasePage - open url: http://www.msn.com/en-in/
+2017-04-28 05:36:48,827 [main] INFO pages.BasePage - quit application
+2017-04-28 05:37:20,302 [main] INFO testcases.NewsTest - || News Before Class, thread: main
+2017-04-28 05:37:20,307 [main] INFO pages.BasePage - Driver is null at this point of time
+2017-04-28 05:37:20,307 [main] INFO pages.BasePage - fetched all properties
+2017-04-28 05:37:20,307 [main] INFO pages.BasePage - Running with firefox driver
+2017-04-28 05:37:20,309 [main] INFO helper.DriverRepo$1 - Current OS: Mac OS X
+2017-04-28 05:37:20,309 [main] INFO helper.DriverRepo$1 - MAC: FF initialized
+2017-04-28 05:37:22,801 [main] INFO pages.BasePage - fetched all properties
+2017-04-28 05:37:22,807 [main] INFO testcases.NewsTest - || News Page Test 1, thread : main
+2017-04-28 05:37:22,808 [main] INFO pages.BasePage - open url: https://www.bing.com/
+2017-04-28 05:37:24,025 [main] INFO testcases.NewsTest - || News Page Test 2, thread : main
+2017-04-28 05:37:24,026 [main] INFO pages.BasePage - open url: http://www.msn.com/en-in/
+2017-04-28 05:37:28,111 [main] INFO pages.BasePage - screenshot captured at: ./src/test/resources/screenshots/NewsTest_verifyNews2_20170428053727.png
+2017-04-28 05:37:28,112 [main] INFO pages.BasePage - quit application

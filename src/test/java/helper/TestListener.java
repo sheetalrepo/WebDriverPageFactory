@@ -18,15 +18,15 @@ public class TestListener implements ITestListener {
 		String testclassRaw = result.getTestClass().toString().trim();
 		String testclass = testclassRaw.substring(32, testclassRaw.length() - 1); 
 		String testname = result.getName().toString().trim();
-		System.out.println(testclass+"     ---    "+testname);
+		
 		try {
-			BasePage.getScreenshot(testclass, testname);
+			BasePage.getInstance().getScreenshot(testclass, testname);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
-
+    
 	
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub

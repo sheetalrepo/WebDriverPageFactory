@@ -31,8 +31,8 @@ public class FlightStatusPage extends BasePage {
 	
 	
 	//default constructor
-	public FlightStatusPage() throws MalformedURLException {
-		super();
+	public FlightStatusPage() {
+		//super();
 	}
 
 

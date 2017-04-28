@@ -1,18 +1,19 @@
 package pages;
 
-import java.io.FileInputStream;
+import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -20,6 +21,7 @@ import org.openqa.selenium.support.ui.Wait;
 
 import helper.DriverRepo;
 import helper.PropertyFileReader;
+import org.apache.commons.io.FileUtils;
 
 /*
  * Base page is parent class of all page classes
@@ -28,24 +30,21 @@ import helper.PropertyFileReader;
  */
 public class BasePage {
 
-	WebDriver driver = null;
+    WebDriver driver = null;
+    //private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	PropertyFileReader propertiesReader = null;
 	Map<String, String> propertyMap;
 	String driverToRun = null;
-	//Logger log = Logger.getLogger("BasePage");
 	Logger log = Logger.getLogger(getClass());
-	
-	
+
 	// singleton implemented
 	private static BasePage instance = null;
 
 	public static BasePage getInstance() throws MalformedURLException {
-
 		PropertyConfigurator.configure("log4j.properties");
 
 		if (instance == null) {
 			instance = new BasePage();
-
 		}
 		return instance;
 	}
@@ -84,10 +83,10 @@ public class BasePage {
 			driver = DriverRepo.FIREFOX.getDriver();
 		} else if (driverToRun.equals("chrome")) {
 			log.info("Running with chrome driver");
-			driver = DriverRepo.CHROME.getDriver();
+			//driver = DriverRepo.CHROME.getDriver();
 		} else {
 			log.info("Running with default driver");
-			driver = DriverRepo.FIREFOX.getDriver();
+			//driver = DriverRepo.FIREFOX.getDriver();
 		}
 		// }
 		log.debug("driver has been initialized as:  " + driver);
@@ -114,19 +113,25 @@ public class BasePage {
 	 * name to make readable image name + take screen shot and place in
 	 * specified folder
 	 */
-	public static void getScreenshot(String testclass, String testname) throws IOException {
-		String timestamp = new SimpleDateFormat("yyyyMMddhhmmss'.png'").format(new Date());
-		String dir;
+	public void getScreenshot(String testclass, String testname) throws IOException {
+		
+		String timestamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		String filePath;
 
 		// todo: set relative path
-		dir = "/Users/sheetalsingh/Documents/workspace/SpiceAuto/src/test/resources/screenshots/";
+		//filePath = "/Users/sheetalsingh/Documents/workspace/WebDriverPageFactory/src/test/resources/screenshots/";
+		filePath = "./src/test/resources/screenshots/";
 
-		String path = dir + testclass + "_" + testname + "_" + timestamp;
-		System.out.println("path:" + path);
+		String path = filePath + testclass + "_" + testname + "_" + timestamp;
 
-		// File scrFile = ((TakesScreenshot)
-		// driver).getScreenshotAs(OutputType.FILE);
-		// FileUtils.copyFile(scrFile, new File(path));
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+		try {
+			FileUtils.copyFile(scrFile, new File(path + ".png"));
+			log.info("screenshot captured at: "+path+".png");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	// todo - need to check how to use in framwwork

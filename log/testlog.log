@@ -10,3 +10,76 @@
 2017-04-27 09:19:50,177 - testcases.NewsTest -INFO - || News Page Test 2, thread : main
 2017-04-27 09:19:50,177 - pages.BasePage -INFO - open url: http://www.msn.com/en-in/
 2017-04-27 09:19:51,481 - pages.BasePage -INFO - quit application
+2017-04-27 12:41:12,725 - testcases.NewsTest -INFO - || News Before Class, thread: main
+2017-04-27 12:41:12,732 - pages.BasePage -INFO - Driver is null at this point of time
+2017-04-27 12:41:12,733 - pages.BasePage -INFO - fetched all properties
+2017-04-27 12:41:12,733 - pages.BasePage -INFO - Running with firefox driver
+2017-04-27 12:41:12,735 - helper.DriverRepo$1 -INFO - Current OS: Mac OS X
+2017-04-27 12:41:12,735 - helper.DriverRepo$1 -INFO - MAC: FF initialized
+2017-04-27 12:41:15,407 - pages.BasePage -INFO - fetched all properties
+2017-04-27 12:41:15,413 - testcases.NewsTest -INFO - || News Page Test 1, thread : main
+2017-04-27 12:41:15,413 - pages.BasePage -INFO - open url: https://www.bing.com/
+2017-04-27 12:41:16,219 - testcases.NewsTest -INFO - || News Page Test 2, thread : main
+2017-04-27 12:41:16,219 - pages.BasePage -INFO - open url: http://www.msn.com/en-in/
+2017-04-27 12:41:19,806 - pages.BasePage -INFO - quit application
+2017-04-27 12:43:38,410 - testcases.NewsTest -INFO - || News Before Class, thread: main
+2017-04-27 12:43:38,416 - pages.BasePage -INFO - Driver is null at this point of time
+2017-04-27 12:43:38,416 - pages.BasePage -INFO - fetched all properties
+2017-04-27 12:43:38,417 - pages.BasePage -INFO - Running with firefox driver
+2017-04-27 12:43:38,418 - helper.DriverRepo$1 -INFO - Current OS: Mac OS X
+2017-04-27 12:43:38,418 - helper.DriverRepo$1 -INFO - MAC: FF initialized
+2017-04-27 12:43:41,046 - pages.BasePage -INFO - fetched all properties
+2017-04-27 12:43:41,054 - testcases.NewsTest -INFO - || News Page Test 1, thread : main
+2017-04-27 12:43:41,054 - pages.BasePage -INFO - open url: https://www.bing.com/
+2017-04-27 12:43:41,992 - testcases.NewsTest -INFO - || News Page Test 2, thread : main
+2017-04-27 12:43:41,992 - pages.BasePage -INFO - open url: http://www.msn.com/en-in/
+2017-04-27 12:43:50,020 - pages.BasePage -INFO - quit application
+2017-04-27 12:48:04,748 - testcases.NewsTest -INFO - || News Before Class, thread: main
+2017-04-27 12:48:04,754 - pages.BasePage -INFO - Driver is null at this point of time
+2017-04-27 12:48:04,755 - pages.BasePage -INFO - fetched all properties
+2017-04-27 12:48:04,755 - pages.BasePage -INFO - Running with firefox driver
+2017-04-27 12:48:04,757 - helper.DriverRepo$1 -INFO - Current OS: Mac OS X
+2017-04-27 12:48:04,757 - helper.DriverRepo$1 -INFO - MAC: FF initialized
+2017-04-27 12:48:07,533 - pages.BasePage -INFO - fetched all properties
+2017-04-27 12:48:07,539 - testcases.NewsTest -INFO - || News Page Test 1, thread : main
+2017-04-27 12:48:07,539 - pages.BasePage -INFO - open url: https://www.bing.com/
+2017-04-27 12:48:08,085 - testcases.NewsTest -INFO - || News Page Test 2, thread : main
+2017-04-27 12:48:08,086 - pages.BasePage -INFO - open url: http://www.msn.com/en-in/
+2017-04-27 12:48:11,190 - pages.BasePage -INFO - quit application
+2017-04-27 12:49:03,140 - testcases.NewsTest -INFO - || News Before Class, thread: main
+2017-04-27 12:49:03,147 - pages.BasePage -INFO - Driver is null at this point of time
+2017-04-27 12:49:03,148 - pages.BasePage -INFO - fetched all properties
+2017-04-27 12:49:03,148 - pages.BasePage -INFO - Running with firefox driver
+2017-04-27 12:49:03,150 - helper.DriverRepo$1 -INFO - Current OS: Mac OS X
+2017-04-27 12:49:03,150 - helper.DriverRepo$1 -INFO - MAC: FF initialized
+2017-04-27 12:49:05,850 - pages.BasePage -INFO - fetched all properties
+2017-04-27 12:49:05,858 - testcases.NewsTest -INFO - || News Page Test 1, thread : main
+2017-04-27 12:49:05,858 - pages.BasePage -INFO - open url: https://www.bing.com/
+2017-04-27 12:49:06,428 - testcases.NewsTest -INFO - || News Page Test 2, thread : main
+2017-04-27 12:49:06,428 - pages.BasePage -INFO - open url: http://www.msn.com/en-in/
+2017-04-27 12:49:09,475 - pages.BasePage -INFO - quit application
+2017-04-28 05:36:35,586 - testcases.NewsTest -INFO - || News Before Class, thread: main
+2017-04-28 05:36:35,592 - pages.BasePage -INFO - Driver is null at this point of time
+2017-04-28 05:36:35,599 - pages.BasePage -INFO - fetched all properties
+2017-04-28 05:36:35,600 - pages.BasePage -INFO - Running with firefox driver
+2017-04-28 05:36:35,602 - helper.DriverRepo$1 -INFO - Current OS: Mac OS X
+2017-04-28 05:36:35,603 - helper.DriverRepo$1 -INFO - MAC: FF initialized
+2017-04-28 05:36:39,079 - pages.BasePage -INFO - fetched all properties
+2017-04-28 05:36:39,086 - testcases.NewsTest -INFO - || News Page Test 1, thread : main
+2017-04-28 05:36:39,086 - pages.BasePage -INFO - open url: https://www.bing.com/
+2017-04-28 05:36:40,154 - testcases.NewsTest -INFO - || News Page Test 2, thread : main
+2017-04-28 05:36:40,155 - pages.BasePage -INFO - open url: http://www.msn.com/en-in/
+2017-04-28 05:36:48,827 - pages.BasePage -INFO - quit application
+2017-04-28 05:37:20,302 - testcases.NewsTest -INFO - || News Before Class, thread: main
+2017-04-28 05:37:20,307 - pages.BasePage -INFO - Driver is null at this point of time
+2017-04-28 05:37:20,307 - pages.BasePage -INFO - fetched all properties
+2017-04-28 05:37:20,307 - pages.BasePage -INFO - Running with firefox driver
+2017-04-28 05:37:20,309 - helper.DriverRepo$1 -INFO - Current OS: Mac OS X
+2017-04-28 05:37:20,309 - helper.DriverRepo$1 -INFO - MAC: FF initialized
+2017-04-28 05:37:22,801 - pages.BasePage -INFO - fetched all properties
+2017-04-28 05:37:22,807 - testcases.NewsTest -INFO - || News Page Test 1, thread : main
+2017-04-28 05:37:22,808 - pages.BasePage -INFO - open url: https://www.bing.com/
+2017-04-28 05:37:24,025 - testcases.NewsTest -INFO - || News Page Test 2, thread : main
+2017-04-28 05:37:24,026 - pages.BasePage -INFO - open url: http://www.msn.com/en-in/
+2017-04-28 05:37:28,111 - pages.BasePage -INFO - screenshot captured at: ./src/test/resources/screenshots/NewsTest_verifyNews2_20170428053727.png
+2017-04-28 05:37:28,112 - pages.BasePage -INFO - quit application
