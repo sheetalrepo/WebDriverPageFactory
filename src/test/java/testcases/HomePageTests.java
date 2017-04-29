@@ -29,7 +29,7 @@ public class HomePageTests {
 	HotelsPage hotelsPage;
 	FlightStatusPage flightStatusPage;
 
-	Logger log = Logger.getLogger(getClass());
+	Logger log = Logger.getLogger(HomePageTests.class);
 
 	@BeforeClass
 	public void init() throws MalformedURLException {
@@ -63,6 +63,7 @@ public class HomePageTests {
 	@Test
 	public void verifyFlightStatusTab() throws MalformedURLException, InterruptedException {
 		log.info("|| Home Page Test 1, thread: " + Thread.currentThread().getName());
+		log.debug("HHHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOPP");
 		// driver.get("https://book2.spicejet.com/");
 		// homePage = new HomePage(driver);
 		// homePage.isHomePageLoaded();

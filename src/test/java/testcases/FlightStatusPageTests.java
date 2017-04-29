@@ -27,7 +27,7 @@ public class FlightStatusPageTests {
 	HomePage homePage;
 	FlightStatusPage flightStatusPage;
 
-	Logger log = Logger.getLogger(getClass());
+	Logger log = Logger.getLogger(FlightStatusPage.class);
 
 	@BeforeClass
 	public void init() throws MalformedURLException {

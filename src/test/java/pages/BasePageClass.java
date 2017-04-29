@@ -36,7 +36,7 @@ public class BasePageClass {
     PropertyFileReader propertiesReader = null;
 	Map<String, String> propertyMap;
 	String driverToRun = null;
-	Logger log = Logger.getLogger(getClass());
+	Logger log = Logger.getLogger(BasePageClass.class);
 
 	// singleton implemented
 	private static BasePageClass instance = null;
@@ -90,7 +90,7 @@ public class BasePageClass {
 			//driver = DriverRepo.FIREFOX.getDriver();
 		}
 		// }
-		log.debug("driver has been initialized as:  " + driver);
+		log.debug("******************** driver has been initialized as:  " + driver);
 		return driver;
 	}
 

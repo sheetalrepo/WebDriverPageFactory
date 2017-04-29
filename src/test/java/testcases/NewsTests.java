@@ -28,7 +28,7 @@ public class NewsTests {
 	HomePage homePage;
 	HotelsPage hotelsPage;
 	FlightStatusPage flightStatusPage;
-	Logger log = Logger.getLogger(getClass());
+	Logger log = Logger.getLogger(NewsTests.class);
 	HomePage hp = new HomePage();
 
 	@BeforeClass
@@ -43,7 +43,6 @@ public class NewsTests {
 		basePage.getDriver();
 		propertyMap = basePage.getProperties();
 		
-
 	}
 
 	@AfterClass
@@ -58,10 +57,11 @@ public class NewsTests {
 	public void verifyNews1() throws MalformedURLException, InterruptedException {
 		
 		log.info("|| News Page Test 1, thread : " + Thread.currentThread().getName());
+		log.debug("WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOW");
 		basePage.get("https://www.bing.com/");
 	}
 
-	@Test
+	//@Test
 	public void verifyNews2() throws MalformedURLException, InterruptedException {
 		log.info("|| News Page Test 2, thread : " + Thread.currentThread().getName());
 		basePage.get("http://www.msn.com/en-in/");
