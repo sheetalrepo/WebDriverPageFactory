@@ -5,7 +5,7 @@
 
 	<test name="Test 1">
 		<classes>
-			<class name="testcases.NewsTests" />
+			<class name="testcases.FlightStatusPageTests" />
 			<class name="testcases.HomePageTests" />
 		</classes>
 	</test>

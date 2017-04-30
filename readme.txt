@@ -1,6 +1,6 @@
 Webdriver + testng + pagefactory project
 
-repo url: 
+repo url: https://github.com/sheetalsingh/WebDriverPageFactory
 
 
 todos:
@@ -8,9 +8,9 @@ Threadlocal for parallel execution
 Logging - done
 Fluentwait
 Reporting - extent
-Listeners - retry, screenshot, 
-remote server handling with switch
+Listeners - retry 
 
+remote server handling with switch
 screenshot for particular id
 image comparison
 

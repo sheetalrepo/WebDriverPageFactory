@@ -3,7 +3,7 @@
 <suite name="Suite">
 	<test name="Test">
 		<classes>
-			<class name="testcases.NewsTests" />
+			<class name="testcases.FlightStatusPageTests" />
 		</classes>
 	</test>
 

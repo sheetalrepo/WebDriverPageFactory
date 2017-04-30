@@ -39,8 +39,8 @@ public class NewsTests {
 		
 
 		basePage = BasePageClass.getInstance();
-		// driver = basePage.getDriver();
-		basePage.getDriver();
+		driver = basePage.getDriver();
+		//basePage.getDriver();
 		propertyMap = basePage.getProperties();
 		
 	}
@@ -57,17 +57,20 @@ public class NewsTests {
 	public void verifyNews1() throws MalformedURLException, InterruptedException {
 		
 		log.info("|| News Page Test 1, thread : " + Thread.currentThread().getName());
-		log.debug("WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOW");
 		basePage.get("https://www.bing.com/");
+		Thread.sleep(20000);
 	}
 
-	//@Test
+	@Test
 	public void verifyNews2() throws MalformedURLException, InterruptedException {
 		log.info("|| News Page Test 2, thread : " + Thread.currentThread().getName());
+		
 		basePage.get("http://www.msn.com/en-in/");
+		//System.out.println(">>>>>>>>>>>>>>>>>>>>>  "+driver.toString());
+		
 //		Thread.sleep(1000);
 //		Assert.assertTrue(false);
-		Thread.sleep(1000);
+		
 	}
 
 }

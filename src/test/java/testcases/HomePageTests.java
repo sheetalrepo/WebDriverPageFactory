@@ -37,8 +37,8 @@ public class HomePageTests {
 		log.info("|| Homepage Before Class: " + Thread.currentThread().getName());
 
 		basePage = BasePageClass.getInstance();
-		// driver = basePage.getDriver();
-		basePage.getDriver();
+		driver = basePage.getDriver();
+		//basePage.getDriver();
 		propertyMap = basePage.getProperties();
 
 	}
@@ -60,10 +60,9 @@ public class HomePageTests {
 		// basePage.close();
 	}
 
-	@Test
+	//@Test
 	public void verifyFlightStatusTab() throws MalformedURLException, InterruptedException {
 		log.info("|| Home Page Test 1, thread: " + Thread.currentThread().getName());
-		log.debug("HHHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOPP");
 		// driver.get("https://book2.spicejet.com/");
 		// homePage = new HomePage(driver);
 		// homePage.isHomePageLoaded();
@@ -81,18 +80,17 @@ public class HomePageTests {
 	public void verifyHotelsTab() throws MalformedURLException, InterruptedException {
 		log.info("|| Home Page Test 2 >> " + Thread.currentThread().getName());
 
-		// driver.get("https://book2.spicejet.com/");
-		// homePage = new HomePage(driver);
-		// homePage.isHomePageLoaded();
-		// homePage.clickHotelsTab();
-		//
-		// Thread.sleep(3000);
-		//
-		// hotelsPage = new HotelsPage(driver);
-		// Assert.assertTrue(hotelsPage.isHotelsPageLoaded(), "Hotels page not
-		// loaded");
+		 basePage.get("https://book2.spicejet.com/");
+		 homePage = new HomePage(driver);
+		 homePage.isHomePageLoaded();
+		 homePage.clickHotelsTab();
+		
+		 Thread.sleep(1000);
+		
+		 hotelsPage = new HotelsPage(driver);
+		 Assert.assertTrue(hotelsPage.isHotelsPageLoaded(), "Hotels page not loaded");
 
-		basePage.get("https://www.asklaila.com/");
+		//basePage.get("https://www.asklaila.com/");
 	}
 
 }
