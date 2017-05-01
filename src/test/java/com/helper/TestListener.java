@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -11,6 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
+import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 
 import com.pages.BasePageClass;
@@ -25,7 +27,7 @@ public class TestListener implements ITestListener {
 	 */
 	public void onTestFailure(ITestResult result) {
 		String testclassRaw = result.getTestClass().toString().trim();
-		String testclass = testclassRaw.substring(32, testclassRaw.length() - 1); 
+		String testclass = testclassRaw.substring(36, testclassRaw.length() - 1); 
 		String testname = result.getName().toString().trim();
 		
 		try {
@@ -64,30 +66,34 @@ public class TestListener implements ITestListener {
 
 	}
 
+	
+	/**
+	 * In case a class has total 2 cases and first one retry 5 times using Retry listeners then 
+	 * result show that total case run: 7, fail: 1, skip: 5
+	 * If we want to hide skipped cases and report should show only passed or failed case then 
+	 * following hack can be used
+	 * todo: not working, it worked in some project
+	 */
 	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
-
-	}
-	
-	
-	
-//	public void getScreenshot(String testclass, String testname) throws IOException {
-//
-//		//log.info("taking screenshot for failed test case: " + testclass + "_" + testname);
-//		String filePath = "./src/test/resources/screenshots/";
-//		String timestamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-//
-//		String path = filePath + testclass + "_" + testname + "_" + timestamp;
-//
-//		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//
-//		try {
-//			FileUtils.copyFile(scrFile, new File(path + ".png"));
-//			//log.info("screenshot captured at: " + path + ".png");
-//		} catch (IOException e) {
-//			e.printStackTrace();
+		
+//		Set<ITestResult> failedTests = context.getFailedTests().getAllResults();
+//		System.out.println("Failed Test Count:  "+ failedTests.size());
+//		
+//		for (ITestResult temp : failedTests) {
+//			System.out.println("FOR LOOP");
+//			ITestNGMethod method = temp.getMethod();
+//			if (context.getFailedTests().getResults(method).size() > 1) {
+//				System.out.println("IF LOOP");
+//				failedTests.remove(temp);
+//			} else {
+//				System.out.println("ELSE LOOP");
+//				if (context.getPassedTests().getResults(method).size() > 0) {
+//					System.out.println("ELSE IF LOOP");
+//					failedTests.remove(temp);
+//				}
+//			}
 //		}
-//	}
+	}
 	
 
 }

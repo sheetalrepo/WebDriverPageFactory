@@ -33,7 +33,6 @@ public enum DriverRepo {
 
 			if (current_os.equals("Mac OS X")) {
 				log.info("MAC: Chrome initialized");
-				//System.setProperty("webdriver.chrome.driver", "/Users/sheetalsingh/Downloads/chromedriver");
 				String path = System.getProperty("user.dir");
 				System.setProperty("webdriver.chrome.driver", path + "/src/test/resources/drivers/chromedriver3");
 				return new ChromeDriver();

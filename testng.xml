@@ -9,5 +9,6 @@
 
 	<listeners>
 		<listener class-name="com.helper.TestListener" />
+		<listener class-name="com.helper.RetryListener"/>
 	</listeners>
 </suite> 

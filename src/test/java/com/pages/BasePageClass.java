@@ -109,6 +109,10 @@ public class BasePageClass {
 		driver.get(url);
 	}
 
+	
+	/**
+	 *  Need to pass driver, as null pointer coming in case we don't pass driver from TestListeners class
+	 */
 	public void getScreenshot(WebDriver driver,String testclass, String testname) throws IOException {
 
 		log.info("taking screenshot for failed test case: " + testclass + "_" + testname);

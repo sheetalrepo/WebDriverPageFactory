@@ -44,21 +44,22 @@ public class FlightStatusPageTests {
 	@Test
 	public void verifyDepartureArrivalCityTest() throws MalformedURLException, InterruptedException {
 		log.info("|| Flight Status Page Test 1  >> " + Thread.currentThread().getName());
-//		basePage.get("https://book2.spicejet.com/");
-//
-//		homePage = new HomePage(driver);
-//		homePage.isHomePageLoaded();
-//		homePage.clickFlighStatusTab();
-//
-//		Thread.sleep(2000);
-//		flightStatusPage = new FlightStatusPage(driver);
-//		flightStatusPage.isFlightStatusPageLoaded();
-//		flightStatusPage.setDepartureCity(1);
-//		flightStatusPage.setArrivalCity(5);
-//
-//		Thread.sleep(2000);
-		basePage.get("https://www.wikipedia.org/");
+		basePage.get("https://book2.spicejet.com/");
+
+		homePage = new HomePage(driver);
+		homePage.isHomePageLoaded();
+		homePage.clickFlighStatusTab();
+
+		Thread.sleep(2000);
+		flightStatusPage = new FlightStatusPage(driver);
+		flightStatusPage.isFlightStatusPageLoaded();
+		flightStatusPage.setDepartureCity(1);
+		flightStatusPage.setArrivalCity(5);
+
+		Thread.sleep(2000);
+//		basePage.get("https://www.wikipedia.org/");
 		Assert.assertTrue(false);
+		Thread.sleep(2000);
 	}
 
 	@Test
@@ -75,6 +76,7 @@ public class FlightStatusPageTests {
 //		Assert.assertEquals(flightStatusPage.getPromotionalBannersCount(), 6, "Banner count is wrong");
 
 		basePage.get("https://github.com/");
+		Assert.assertTrue(true);
 	}
 
 }
