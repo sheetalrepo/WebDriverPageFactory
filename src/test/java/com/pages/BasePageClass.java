@@ -34,9 +34,6 @@ import org.apache.commons.io.FileUtils;
 public class BasePageClass {
 
 	WebDriver driver = null;
-	// private static ThreadLocal<WebDriver> driver = new
-	// ThreadLocal<WebDriver>();
-
 	PropertyFileReader propertiesReader = null;
 	Map<String, String> propertyMap;
 	String driverToRun = null;
@@ -45,12 +42,15 @@ public class BasePageClass {
 	// singleton implemented
 	private static BasePageClass instance = null;
 
+	/**
+	 * log4j need to be initialized once
+	 */
 	public static BasePageClass getInstance() throws MalformedURLException {
-		// PropertyConfigurator.configure("log4j.properties");
+		PropertyConfigurator.configure("log4j.properties");
 
-		// if (instance == null) {
-		instance = new BasePageClass();
-		// }
+		//if (instance == null) {
+			instance = new BasePageClass();
+		//}
 		return instance;
 	}
 
@@ -67,27 +67,24 @@ public class BasePageClass {
 		return propertyMap;
 	}
 
+	/**
+	 * driver can be picked from Thread local or from Enum(w/o thread local implementation)
+	 */
 	public WebDriver getDriver() {
 
 		String driverToRun = getProperties().get("driver");
 
 		if (driverToRun.equals("firefox")) {
-			log.info("Running with firefox driver");
-
-			// driver = DriverRepo.FIREFOX.getDriver();
+			//driver = DriverRepo.FIREFOX.getDriver();
 			ThreadLocalDriver.setWebDriver(DriverFactory.createInstance("firefox"));
 			driver = ThreadLocalDriver.getDriver();
 
 		} else if (driverToRun.equals("chrome")) {
-			log.info("Running with chrome driver");
-
 			// driver = DriverRepo.CHROME.getDriver();
 			ThreadLocalDriver.setWebDriver(DriverFactory.createInstance("chrome"));
 			driver = ThreadLocalDriver.getDriver();
 
 		} else {
-			log.info("Running with default driver");
-
 			// driver = DriverRepo.FIREFOX.getDriver();
 			ThreadLocalDriver.setWebDriver(DriverFactory.createInstance("firefox"));
 			driver = ThreadLocalDriver.getDriver();
@@ -112,9 +109,9 @@ public class BasePageClass {
 		driver.get(url);
 	}
 
-	public void getScreenshot(String testclass, String testname) throws IOException {
-		
-		log.info("taking screenshot for failed test case: "+ testclass+"_"+testname);
+	public void getScreenshot(WebDriver driver,String testclass, String testname) throws IOException {
+
+		log.info("taking screenshot for failed test case: " + testclass + "_" + testname);
 		String filePath = "./src/test/resources/screenshots/";
 		String timestamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 
@@ -130,7 +127,7 @@ public class BasePageClass {
 		}
 	}
 
-	// todo - need to check how to use in framwwork
+
 	public Wait<WebDriver> setupWait(WebDriver driver, Integer timeout) {
 		return new FluentWait<WebDriver>(driver).withTimeout(timeout, TimeUnit.SECONDS)
 				.pollingEvery(500, TimeUnit.MILLISECONDS).ignoring(NoSuchElementException.class)

@@ -1,19 +1,16 @@
 package com.testcases;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import com.helper.PropertyFileReader;
 import com.pages.BasePageClass;
 import com.pages.FlightStatusPage;
 import com.pages.HomePage;
@@ -33,11 +30,9 @@ public class NewsTests {
 
 	@BeforeClass
 	public void init() throws MalformedURLException {
-		PropertyConfigurator.configure("log4j.properties");
+		//PropertyConfigurator.configure("log4j.properties");
 		log.info("|| News Before Class, thread: " + Thread.currentThread().getName());
-		log.debug("I AM DEBUG");
 		
-
 		basePage = BasePageClass.getInstance();
 		driver = basePage.getDriver();
 		//basePage.getDriver();
@@ -47,10 +42,7 @@ public class NewsTests {
 
 	@AfterClass
 	public void tearDown() throws InterruptedException {
-		// Thread.sleep(5000);
-
 		basePage.quit();
-		//basePage.close();
 	}
 
 	@Test
@@ -58,19 +50,22 @@ public class NewsTests {
 		
 		log.info("|| News Page Test 1, thread : " + Thread.currentThread().getName());
 		basePage.get("https://www.bing.com/");
-		Thread.sleep(20000);
+		Assert.assertTrue(false);
+		
 	}
 
 	@Test
-	public void verifyNews2() throws MalformedURLException, InterruptedException {
+	public void verifyNews2() throws InterruptedException, IOException {
 		log.info("|| News Page Test 2, thread : " + Thread.currentThread().getName());
 		
 		basePage.get("http://www.msn.com/en-in/");
-		//System.out.println(">>>>>>>>>>>>>>>>>>>>>  "+driver.toString());
 		
-//		Thread.sleep(1000);
-//		Assert.assertTrue(false);
-		
+		Assert.assertTrue(true);
+		//basePage.getScreenshot(driver, "NewsTests", "verifyNews2");
+		Thread.sleep(2000);
 	}
+	
+	
+
 
 }

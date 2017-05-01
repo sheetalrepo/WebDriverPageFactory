@@ -1,7 +1,14 @@
 package com.helper;
 
+import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -10,6 +17,8 @@ import com.pages.BasePageClass;
 
 public class TestListener implements ITestListener {
 
+	WebDriver driver;
+	
 	/*
 	 * It will keeps listening every test. On any test failure this code will get trigger 
 	 * and screenshot will be saved in specific folder
@@ -20,7 +29,9 @@ public class TestListener implements ITestListener {
 		String testname = result.getName().toString().trim();
 		
 		try {
-			BasePageClass.getInstance().getScreenshot(testclass, testname);
+			//driver = BasePageClass.getInstance().getDriver();
+			driver = ThreadLocalDriver.getDriver();
+			BasePageClass.getInstance().getScreenshot(driver, testclass, testname);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -57,5 +68,26 @@ public class TestListener implements ITestListener {
 		// TODO Auto-generated method stub
 
 	}
+	
+	
+	
+//	public void getScreenshot(String testclass, String testname) throws IOException {
+//
+//		//log.info("taking screenshot for failed test case: " + testclass + "_" + testname);
+//		String filePath = "./src/test/resources/screenshots/";
+//		String timestamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+//
+//		String path = filePath + testclass + "_" + testname + "_" + timestamp;
+//
+//		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//
+//		try {
+//			FileUtils.copyFile(scrFile, new File(path + ".png"));
+//			//log.info("screenshot captured at: " + path + ".png");
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+//	}
+	
 
 }
