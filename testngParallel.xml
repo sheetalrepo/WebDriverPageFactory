@@ -3,10 +3,15 @@
 
 <suite name="WebdriverTests" parallel="classes" thread-count="2">
 
+
+	<listeners>
+		<listener class-name="com.helper.TestListener" />
+	</listeners>
+
 	<test name="Test 1">
 		<classes>
-			<class name="testcases.FlightStatusPageTests" />
-			<class name="testcases.HomePageTests" />
+			<class name="com.testcases.FlightStatusPageTests" />
+			<class name="com.testcases.HomePageTests" />
 		</classes>
 	</test>
 

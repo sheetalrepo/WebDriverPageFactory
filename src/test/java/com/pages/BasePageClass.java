@@ -1,4 +1,4 @@
-package pages;
+package com.pages;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,8 +19,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
-import helper.DriverRepo;
-import helper.PropertyFileReader;
+import com.helper.DriverFactory;
+import com.helper.DriverRepo;
+import com.helper.PropertyFileReader;
+import com.helper.ThreadLocalDriver;
+
 import org.apache.commons.io.FileUtils;
 
 /*
@@ -30,10 +33,11 @@ import org.apache.commons.io.FileUtils;
  */
 public class BasePageClass {
 
-    WebDriver driver = null;
-    //private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
-	
-    PropertyFileReader propertiesReader = null;
+	WebDriver driver = null;
+	// private static ThreadLocal<WebDriver> driver = new
+	// ThreadLocal<WebDriver>();
+
+	PropertyFileReader propertiesReader = null;
 	Map<String, String> propertyMap;
 	String driverToRun = null;
 	Logger log = Logger.getLogger(BasePageClass.class);
@@ -42,11 +46,11 @@ public class BasePageClass {
 	private static BasePageClass instance = null;
 
 	public static BasePageClass getInstance() throws MalformedURLException {
-		PropertyConfigurator.configure("log4j.properties");
+		// PropertyConfigurator.configure("log4j.properties");
 
-		//if (instance == null) {
-			instance = new BasePageClass();
-		//}
+		// if (instance == null) {
+		instance = new BasePageClass();
+		// }
 		return instance;
 	}
 
@@ -63,34 +67,33 @@ public class BasePageClass {
 		return propertyMap;
 	}
 
-	/**
-	 * This method will 1. read driver value from command line and properties
-	 * file 2. initializes driver
-	 * 
-	 * todo: in case we use quit() in test cases then current running driver
-	 * context get removed + driver instance not set to null, so in that case if
-	 * loop not get executed and test failed
-	 * 
-	 * thread local can be used
-	 */
 	public WebDriver getDriver() {
 
-		// if(driverToRun == null){
-		log.info("Driver is null at this point of time");
 		String driverToRun = getProperties().get("driver");
 
 		if (driverToRun.equals("firefox")) {
 			log.info("Running with firefox driver");
-			driver = DriverRepo.FIREFOX.getDriver();
+
+			// driver = DriverRepo.FIREFOX.getDriver();
+			ThreadLocalDriver.setWebDriver(DriverFactory.createInstance("firefox"));
+			driver = ThreadLocalDriver.getDriver();
+
 		} else if (driverToRun.equals("chrome")) {
 			log.info("Running with chrome driver");
-			//driver = DriverRepo.CHROME.getDriver();
+
+			// driver = DriverRepo.CHROME.getDriver();
+			ThreadLocalDriver.setWebDriver(DriverFactory.createInstance("chrome"));
+			driver = ThreadLocalDriver.getDriver();
+
 		} else {
 			log.info("Running with default driver");
-			//driver = DriverRepo.FIREFOX.getDriver();
+
+			// driver = DriverRepo.FIREFOX.getDriver();
+			ThreadLocalDriver.setWebDriver(DriverFactory.createInstance("firefox"));
+			driver = ThreadLocalDriver.getDriver();
 		}
-		// }
-		log.debug("******************** driver has been initialized as:  " + driver);
+
+		log.debug("driver has been initialized as:  " + driver);
 		return driver;
 	}
 
@@ -109,19 +112,11 @@ public class BasePageClass {
 		driver.get(url);
 	}
 
-	/*
-	 * todo : incomplete method This method will accept test class and method
-	 * name to make readable image name + take screen shot and place in
-	 * specified folder
-	 */
 	public void getScreenshot(String testclass, String testname) throws IOException {
 		
+		log.info("taking screenshot for failed test case: "+ testclass+"_"+testname);
+		String filePath = "./src/test/resources/screenshots/";
 		String timestamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-		String filePath;
-
-		// todo: set relative path
-		//filePath = "/Users/sheetalsingh/Documents/workspace/WebDriverPageFactory/src/test/resources/screenshots/";
-		filePath = "./src/test/resources/screenshots/";
 
 		String path = filePath + testclass + "_" + testname + "_" + timestamp;
 
@@ -129,7 +124,7 @@ public class BasePageClass {
 
 		try {
 			FileUtils.copyFile(scrFile, new File(path + ".png"));
-			log.info("screenshot captured at: "+path+".png");
+			log.info("screenshot captured at: " + path + ".png");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

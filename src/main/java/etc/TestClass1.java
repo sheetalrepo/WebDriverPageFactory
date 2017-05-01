@@ -15,6 +15,7 @@ public class TestClass1 {
 		drv = LocalDriverFactory.createInstance("firefox");
 		LocalDriverManager.setWebDriver(drv);
 		driver = LocalDriverManager.getDriver();
+		
 	}
 
 	@AfterClass

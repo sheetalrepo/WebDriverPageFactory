@@ -1,4 +1,4 @@
-package testcases;
+package com.testcases;
 
 import java.net.MalformedURLException;
 import java.util.Map;
@@ -13,11 +13,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import helper.PropertyFileReader;
-import pages.BasePageClass;
-import pages.FlightStatusPage;
-import pages.HomePage;
-import pages.HotelsPage;
+import com.helper.PropertyFileReader;
+import com.pages.BasePageClass;
+import com.pages.FlightStatusPage;
+import com.pages.HomePage;
+import com.pages.HotelsPage;
 
 public class NewsTests {
 
@@ -42,7 +42,7 @@ public class NewsTests {
 		driver = basePage.getDriver();
 		//basePage.getDriver();
 		propertyMap = basePage.getProperties();
-		
+		log.debug("News driver hashcode: "+driver.hashCode());
 	}
 
 	@AfterClass

@@ -1,4 +1,4 @@
-package pages;
+package com.pages;
 
 import java.net.MalformedURLException;
 

@@ -1,4 +1,4 @@
-package helper;
+package com.helper;
 
 import java.io.IOException;
 
@@ -6,7 +6,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import pages.BasePageClass;
+import com.pages.BasePageClass;
 
 public class TestListener implements ITestListener {
 

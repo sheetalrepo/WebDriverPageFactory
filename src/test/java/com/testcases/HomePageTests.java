@@ -1,4 +1,4 @@
-package testcases;
+package com.testcases;
 
 import java.net.MalformedURLException;
 import java.util.Map;
@@ -13,11 +13,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import helper.PropertyFileReader;
-import pages.BasePageClass;
-import pages.FlightStatusPage;
-import pages.HomePage;
-import pages.HotelsPage;
+import com.helper.PropertyFileReader;
+import com.pages.BasePageClass;
+import com.pages.FlightStatusPage;
+import com.pages.HomePage;
+import com.pages.HotelsPage;
 
 public class HomePageTests {
 
@@ -38,8 +38,8 @@ public class HomePageTests {
 
 		basePage = BasePageClass.getInstance();
 		driver = basePage.getDriver();
-		//basePage.getDriver();
 		propertyMap = basePage.getProperties();
+		log.debug("Home page driver hashcode: "+driver.hashCode());
 
 	}
 
@@ -60,20 +60,19 @@ public class HomePageTests {
 		// basePage.close();
 	}
 
-	//@Test
+	@Test
 	public void verifyFlightStatusTab() throws MalformedURLException, InterruptedException {
 		log.info("|| Home Page Test 1, thread: " + Thread.currentThread().getName());
-		// driver.get("https://book2.spicejet.com/");
-		// homePage = new HomePage(driver);
-		// homePage.isHomePageLoaded();
-		// homePage.clickFlighStatusTab();
-		// Thread.sleep(2000);
-		// flightStatusPage = new FlightStatusPage(driver);
-		// Assert.assertTrue(flightStatusPage.isFlightStatusPageLoaded(),
-		// "Flight Status page not loaded");
-
+		 basePage.get("https://book2.spicejet.com/");
+		 homePage = new HomePage(driver);
+		 homePage.isHomePageLoaded();
+		 homePage.clickFlighStatusTab();
+		 Thread.sleep(2000);
+		 flightStatusPage = new FlightStatusPage(driver);
+		 Assert.assertTrue(flightStatusPage.isFlightStatusPageLoaded(),"Flight Status page not loaded");
+		 Thread.sleep(2000);
 		//basePage.get(propertyMap.get("server"));
-		basePage.get("https://www.google.com/");
+		//basePage.get("https://www.google.com/");
 	}
 
 	@Test
@@ -85,7 +84,7 @@ public class HomePageTests {
 		 homePage.isHomePageLoaded();
 		 homePage.clickHotelsTab();
 		
-		 Thread.sleep(1000);
+		 Thread.sleep(2000);
 		
 		 hotelsPage = new HotelsPage(driver);
 		 Assert.assertTrue(hotelsPage.isHotelsPageLoaded(), "Hotels page not loaded");
