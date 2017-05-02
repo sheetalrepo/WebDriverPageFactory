@@ -6,6 +6,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+/*
+ * earlier used when thread local has not been implemented
+ * 
+ * currently not in use
+ */
 public enum DriverRepo {
 
 	FIREFOX {

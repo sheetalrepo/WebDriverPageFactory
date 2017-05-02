@@ -80,5 +80,8 @@ public class PropertyFileReader {
 	public Map<String, String> getPropertyMap() {
 		return propMap;
 	}
+	
+	
+	
 
 }

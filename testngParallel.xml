@@ -5,7 +5,8 @@
 
 
 	<listeners>
-		<listener class-name="com.helper.TestListener" />
+		<listener class-name="com.listeners.TestListener" />
+		<listener class-name="com.listeners.RetryListener" />
 	</listeners>
 
 	<test name="Test 1">

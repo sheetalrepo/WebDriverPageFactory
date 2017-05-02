@@ -8,7 +8,7 @@
 	</test>
 
 	<listeners>
-		<listener class-name="com.helper.TestListener" />
-		<listener class-name="com.helper.RetryListener"/>
+		<listener class-name="com.listeners.TestListener" />
+		<listener class-name="com.listeners.RetryListener"/>
 	</listeners>
 </suite> 

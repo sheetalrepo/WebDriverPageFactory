@@ -18,7 +18,7 @@ import com.pages.HotelsPage;
 public class HomePageTests {
 
 	WebDriver driver;
-	Map<String, String> propertyMap;
+	Map<String, String> map;
 
 	BasePageClass basePage;
 	HomePage homePage;
@@ -34,21 +34,12 @@ public class HomePageTests {
 
 		basePage = BasePageClass.getInstance();
 		driver = basePage.getDriver();
-		propertyMap = basePage.getProperties();
+		map = basePage.getProperties();
 		log.debug("Home page driver hashcode: "+driver.hashCode());
 
 	}
 
-	/**
-	 * quit(): getDriver() method break as quit() doesn't make driver as null
-	 * also looses current running firefox context
-	 * 
-	 * close(): last running test class will not close browser - todo
-	 * 
-	 * thread local should be implemented to avoid such issue, parallel mode
-	 * 
-	 * @throws InterruptedException
-	 */
+
 	@AfterClass
 	public void tearDown() throws InterruptedException {
 		basePage.quit();
@@ -65,7 +56,7 @@ public class HomePageTests {
 		 flightStatusPage = new FlightStatusPage(driver);
 		 Assert.assertTrue(flightStatusPage.isFlightStatusPageLoaded(),"Flight Status page not loaded");
 		 Thread.sleep(2000);
-		//basePage.get(propertyMap.get("server"));  obj.getServer();
+		//basePage.get(map.get("server"));  
 //		basePage.get("https://www.google.com/");
 		Assert.assertTrue(false);
 		Thread.sleep(2000);

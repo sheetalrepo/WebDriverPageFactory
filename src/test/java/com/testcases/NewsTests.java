@@ -19,15 +19,14 @@ import com.pages.HotelsPage;
 public class NewsTests {
 
 	WebDriver driver;
-	Map<String, String> propertyMap;
+	Map<String, String> map;
 
 	BasePageClass basePage;
 	HomePage homePage;
 	HotelsPage hotelsPage;
 	FlightStatusPage flightStatusPage;
 	Logger log = Logger.getLogger(NewsTests.class);
-	HomePage hp = new HomePage();
-
+	
 	@BeforeClass
 	public void init() throws MalformedURLException {
 		//PropertyConfigurator.configure("log4j.properties");
@@ -35,8 +34,7 @@ public class NewsTests {
 		
 		basePage = BasePageClass.getInstance();
 		driver = basePage.getDriver();
-		//basePage.getDriver();
-		propertyMap = basePage.getProperties();
+		map = basePage.getProperties();
 		log.debug("News driver hashcode: "+driver.hashCode());
 	}
 
@@ -49,9 +47,10 @@ public class NewsTests {
 	public void verifyNews1() throws MalformedURLException, InterruptedException {
 		
 		log.info("|| News Page Test 1, thread : " + Thread.currentThread().getName());
-		basePage.get("https://www.bing.com/");
+		//basePage.get("https://www.bing.com/");
+		basePage.get(map.get("server"));
 		Assert.assertTrue(false);
-		
+		Thread.sleep(2000);
 	}
 
 	@Test
