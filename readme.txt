@@ -4,14 +4,14 @@ repo url: https://github.com/sheetalsingh/WebDriverPageFactory
 
 
 todos:
-Fluentwait
-Reporting - extent/allure?
-
-remote server handling with switch
-screenshot for particular id
-image comparison
-email report
-
+1. Fluentwait/ Wait
+2. Reporting - extent/allure?
+3. Remote server handling
+4. Fileseparator, separate all path in one class
+5. image comparison  - try Sikuli
+6. email report  - use jenkin
+7. Try to automate some good site like wiki or github
 
 #issues:
-retry listener show skip cases count as well
+1. retry listener show skip cases count as well - P3
+2. screenshot for particular id - done (some issue coming, not used in framework)  - P3

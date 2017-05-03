@@ -11,16 +11,20 @@ import com.pages.HomePage;
 /*
  * Run this test class in every testng.xml files to initialize driver once
  */
-//public class SetupTest {
-//	
+public class SetupTest {
+
 //	WebDriver driver;
 //	BasePage basePage;
 //	HomePage homePage;
 //	
-//	@BeforeSuite
-//	public void init() throws MalformedURLException{
-//		System.out.println("*********************#####  Before Suite *********************");
+	@BeforeSuite
+	public void init() {
+		System.out.println("*********************#####  Before Suite *********************");
 //		BasePage.getInstance().getDriver();
-//	}
-//			
-//}
+	}
+	
+	
+	
+	
+			
+}

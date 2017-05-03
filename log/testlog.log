@@ -142,3 +142,318 @@
 2017-05-01 09:24:49,648 - com.pages.BasePageClass -INFO - open url: http://www.msn.com/en-in/
 2017-05-01 09:24:51,097 - com.pages.BasePageClass -INFO - quit application
 2017-05-01 09:24:51,097 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 11:50:58,783 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:50:58,783 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:50:58,787 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 11:50:58,787 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 11:51:01,398 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (bed1a21b-7d96-254b-be95-c15dc503f948)
+2017-05-02 11:51:01,398 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (bed1a21b-7d96-254b-be95-c15dc503f948)
+2017-05-02 11:51:01,398 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:51:01,398 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:51:01,398 - com.testcases.NewsTests -DEBUG - News driver hashcode: 1182908789
+2017-05-02 11:51:01,398 - com.testcases.NewsTests -DEBUG - News driver hashcode: 1182908789
+2017-05-02 11:51:01,931 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:51:01,931 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:51:01,932 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:51:01,932 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:51:02,602 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:51:02,602 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:51:02,602 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:51:02,602 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:51:03,125 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:51:03,125 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:51:03,125 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:51:03,125 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:51:03,635 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:51:03,635 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:51:03,636 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:51:03,636 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:51:04,076 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:51:04,076 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:51:04,076 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:51:04,076 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:51:04,714 - com.pages.BasePageClass -INFO - taking screenshot for failed test case: NewsTests_verifyNews1
+2017-05-02 11:51:04,714 - com.pages.BasePageClass -INFO - taking screenshot for failed test case: NewsTests_verifyNews1
+2017-05-02 11:51:04,992 - com.pages.BasePageClass -INFO - screenshot captured at: ./src/test/resources/screenshots/NewsTests_verifyNews1_20170502115104.png
+2017-05-02 11:51:04,992 - com.pages.BasePageClass -INFO - screenshot captured at: ./src/test/resources/screenshots/NewsTests_verifyNews1_20170502115104.png
+2017-05-02 11:51:04,993 - com.testcases.NewsTests -INFO - || News Page Test 2, thread : main
+2017-05-02 11:51:04,993 - com.testcases.NewsTests -INFO - || News Page Test 2, thread : main
+2017-05-02 11:51:04,994 - com.pages.BasePageClass -INFO - open url: http://www.msn.com/en-in/
+2017-05-02 11:51:04,994 - com.pages.BasePageClass -INFO - open url: http://www.msn.com/en-in/
+2017-05-02 11:51:11,752 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 11:51:11,752 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 11:53:16,376 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:53:16,376 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:53:16,380 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 11:53:16,380 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 11:53:19,023 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (f2679927-37b7-254e-84d2-ee81d037cb41)
+2017-05-02 11:53:19,023 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (f2679927-37b7-254e-84d2-ee81d037cb41)
+2017-05-02 11:53:19,024 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:53:19,024 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:53:19,024 - com.testcases.NewsTests -DEBUG - News driver hashcode: 1182908789
+2017-05-02 11:53:19,024 - com.testcases.NewsTests -DEBUG - News driver hashcode: 1182908789
+2017-05-02 11:53:19,278 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:53:19,278 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:53:19,279 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:53:19,279 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:53:20,030 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:53:20,030 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:53:20,031 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:53:20,031 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:53:20,871 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:53:20,871 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:53:20,871 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:53:20,871 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:53:21,512 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:53:21,512 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:53:21,512 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:53:21,512 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:53:22,178 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:53:22,178 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:53:22,179 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:53:22,179 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:53:23,062 - com.pages.BasePageClass -INFO - taking screenshot for failed test case: NewsTests_verifyNews1
+2017-05-02 11:53:23,062 - com.pages.BasePageClass -INFO - taking screenshot for failed test case: NewsTests_verifyNews1
+2017-05-02 11:53:25,581 - com.pages.BasePageClass -INFO - screenshot captured at: ./src/test/resources/screenshots/NewsTests_verifyNews1_20170502115323.png
+2017-05-02 11:53:25,581 - com.pages.BasePageClass -INFO - screenshot captured at: ./src/test/resources/screenshots/NewsTests_verifyNews1_20170502115323.png
+2017-05-02 11:53:25,588 - com.testcases.NewsTests -INFO - || News Page Test 2, thread : main
+2017-05-02 11:53:25,588 - com.testcases.NewsTests -INFO - || News Page Test 2, thread : main
+2017-05-02 11:53:25,589 - com.pages.BasePageClass -INFO - open url: http://www.msn.com/en-in/
+2017-05-02 11:53:25,589 - com.pages.BasePageClass -INFO - open url: http://www.msn.com/en-in/
+2017-05-02 11:53:33,574 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 11:53:33,574 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 11:56:45,583 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:56:45,583 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:56:45,587 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 11:56:45,587 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 11:56:48,247 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (e80bd649-1335-7044-8fde-62b85ad13a6b)
+2017-05-02 11:56:48,247 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (e80bd649-1335-7044-8fde-62b85ad13a6b)
+2017-05-02 11:56:48,247 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:56:48,247 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:56:48,247 - com.testcases.NewsTests -DEBUG - News driver hashcode: 867988177
+2017-05-02 11:56:48,247 - com.testcases.NewsTests -DEBUG - News driver hashcode: 867988177
+2017-05-02 11:56:48,562 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:56:48,562 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:56:48,563 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:56:48,563 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:56:51,205 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 11:56:51,205 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 11:59:06,688 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:59:06,688 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:59:06,692 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 11:59:06,692 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 11:59:09,245 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (3149afc4-3390-2646-8968-552400e40e67)
+2017-05-02 11:59:09,245 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (3149afc4-3390-2646-8968-552400e40e67)
+2017-05-02 11:59:09,245 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:59:09,245 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 11:59:09,246 - com.testcases.NewsTests -DEBUG - News driver hashcode: 867988177
+2017-05-02 11:59:09,246 - com.testcases.NewsTests -DEBUG - News driver hashcode: 867988177
+2017-05-02 11:59:09,507 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:59:09,507 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 11:59:09,507 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:59:09,507 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 11:59:12,325 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 11:59:12,325 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 12:00:17,682 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:00:17,682 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:00:17,686 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 12:00:17,686 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 12:00:20,239 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (191abbd0-4dc3-834a-b9d2-6b6fbe5b77fc)
+2017-05-02 12:00:20,239 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (191abbd0-4dc3-834a-b9d2-6b6fbe5b77fc)
+2017-05-02 12:00:20,239 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:00:20,239 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:00:20,240 - com.testcases.NewsTests -DEBUG - News driver hashcode: 867988177
+2017-05-02 12:00:20,240 - com.testcases.NewsTests -DEBUG - News driver hashcode: 867988177
+2017-05-02 12:00:20,544 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:00:20,544 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:00:20,544 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:00:20,544 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:00:23,360 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 12:00:23,360 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 12:02:37,120 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:02:37,120 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:02:37,124 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 12:02:37,124 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 12:02:39,738 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (ee869557-91aa-614c-9767-145c1d019d72)
+2017-05-02 12:02:39,738 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (ee869557-91aa-614c-9767-145c1d019d72)
+2017-05-02 12:02:39,739 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:02:39,739 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:02:39,739 - com.testcases.NewsTests -DEBUG - News driver hashcode: 867988177
+2017-05-02 12:02:39,739 - com.testcases.NewsTests -DEBUG - News driver hashcode: 867988177
+2017-05-02 12:02:40,048 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:02:40,048 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:02:40,048 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:02:40,048 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:02:42,589 - com.testcases.NewsTests -INFO - || News Page Test 2, thread : main
+2017-05-02 12:02:42,589 - com.testcases.NewsTests -INFO - || News Page Test 2, thread : main
+2017-05-02 12:02:42,589 - com.pages.BasePageClass -INFO - open url: http://www.msn.com/en-in/
+2017-05-02 12:02:42,589 - com.pages.BasePageClass -INFO - open url: http://www.msn.com/en-in/
+2017-05-02 12:02:49,876 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 12:02:49,876 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 12:06:34,488 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:06:34,488 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:06:34,493 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 12:06:34,493 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 12:06:37,093 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (1c4cf0f3-3022-514f-a51a-f82fabf39368)
+2017-05-02 12:06:37,093 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (1c4cf0f3-3022-514f-a51a-f82fabf39368)
+2017-05-02 12:06:37,093 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:06:37,093 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:06:37,094 - com.testcases.NewsTests -DEBUG - News driver hashcode: 867988177
+2017-05-02 12:06:37,094 - com.testcases.NewsTests -DEBUG - News driver hashcode: 867988177
+2017-05-02 12:06:37,368 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:06:37,368 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:06:37,368 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:06:37,368 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:06:40,303 - com.testcases.NewsTests -INFO - || News Page Test 2, thread : main
+2017-05-02 12:06:40,303 - com.testcases.NewsTests -INFO - || News Page Test 2, thread : main
+2017-05-02 12:06:40,304 - com.pages.BasePageClass -INFO - open url: http://www.msn.com/en-in/
+2017-05-02 12:06:40,304 - com.pages.BasePageClass -INFO - open url: http://www.msn.com/en-in/
+2017-05-02 12:06:47,682 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 12:06:47,682 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 12:07:24,157 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:07:24,157 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:07:24,161 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 12:07:24,161 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 12:07:26,656 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (d337cca5-f7df-3e47-82c3-ffbd86af9697)
+2017-05-02 12:07:26,656 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (d337cca5-f7df-3e47-82c3-ffbd86af9697)
+2017-05-02 12:07:26,657 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:07:26,657 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:07:26,657 - com.testcases.NewsTests -DEBUG - News driver hashcode: 1182908789
+2017-05-02 12:07:26,657 - com.testcases.NewsTests -DEBUG - News driver hashcode: 1182908789
+2017-05-02 12:07:26,907 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:07:26,907 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:07:26,908 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:07:26,908 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:07:29,455 - com.testcases.NewsTests -INFO - || News Page Test 2, thread : main
+2017-05-02 12:07:29,455 - com.testcases.NewsTests -INFO - || News Page Test 2, thread : main
+2017-05-02 12:07:29,456 - com.pages.BasePageClass -INFO - open url: http://www.msn.com/en-in/
+2017-05-02 12:07:29,456 - com.pages.BasePageClass -INFO - open url: http://www.msn.com/en-in/
+2017-05-02 12:07:32,623 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 12:07:32,623 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 12:09:03,292 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:09:03,292 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:09:03,295 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 12:09:03,295 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 12:09:05,811 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (9cb054dd-eef0-d342-8f05-1ffe04847182)
+2017-05-02 12:09:05,811 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (9cb054dd-eef0-d342-8f05-1ffe04847182)
+2017-05-02 12:09:05,811 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:09:05,811 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:09:05,811 - com.testcases.NewsTests -DEBUG - News driver hashcode: 1182908789
+2017-05-02 12:09:05,811 - com.testcases.NewsTests -DEBUG - News driver hashcode: 1182908789
+2017-05-02 12:09:06,082 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:09:06,082 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:09:06,083 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:09:06,083 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:09:08,991 - com.testcases.NewsTests -INFO - || News Page Test 2, thread : main
+2017-05-02 12:09:08,991 - com.testcases.NewsTests -INFO - || News Page Test 2, thread : main
+2017-05-02 12:09:08,991 - com.pages.BasePageClass -INFO - open url: http://www.msn.com/en-in/
+2017-05-02 12:09:08,991 - com.pages.BasePageClass -INFO - open url: http://www.msn.com/en-in/
+2017-05-02 12:09:16,369 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 12:09:16,369 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 12:10:32,225 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:10:32,225 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:10:32,229 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 12:10:32,229 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-02 12:10:34,876 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (a393c24b-3629-b34d-934f-84e4963c0503)
+2017-05-02 12:10:34,876 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (a393c24b-3629-b34d-934f-84e4963c0503)
+2017-05-02 12:10:34,876 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:10:34,876 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-02 12:10:34,876 - com.testcases.NewsTests -DEBUG - News driver hashcode: 1182908789
+2017-05-02 12:10:34,876 - com.testcases.NewsTests -DEBUG - News driver hashcode: 1182908789
+2017-05-02 12:10:35,198 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:10:35,198 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:10:35,199 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:10:35,199 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:10:35,872 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:10:35,872 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:10:35,873 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:10:35,873 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:10:36,469 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:10:36,469 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:10:36,470 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:10:36,470 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:10:37,298 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:10:37,298 - com.testcases.NewsTests -INFO - || News Page Test 1, thread : main
+2017-05-02 12:10:37,299 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:10:37,299 - com.pages.BasePageClass -INFO - open url: https://www.bing.com
+2017-05-02 12:10:37,743 - com.pages.BasePageClass -INFO - taking screenshot for failed test case: NewsTests_verifyNews1
+2017-05-02 12:10:37,743 - com.pages.BasePageClass -INFO - taking screenshot for failed test case: NewsTests_verifyNews1
+2017-05-02 12:10:38,049 - com.pages.BasePageClass -INFO - screenshot captured at: ./src/test/resources/screenshots/NewsTests_verifyNews1_20170502121037.png
+2017-05-02 12:10:38,049 - com.pages.BasePageClass -INFO - screenshot captured at: ./src/test/resources/screenshots/NewsTests_verifyNews1_20170502121037.png
+2017-05-02 12:10:38,050 - com.testcases.NewsTests -INFO - || News Page Test 2, thread : main
+2017-05-02 12:10:38,050 - com.testcases.NewsTests -INFO - || News Page Test 2, thread : main
+2017-05-02 12:10:38,051 - com.pages.BasePageClass -INFO - open url: http://www.msn.com/en-in/
+2017-05-02 12:10:38,051 - com.pages.BasePageClass -INFO - open url: http://www.msn.com/en-in/
+2017-05-02 12:10:50,582 - com.pages.BasePageClass -INFO - quit application
+2017-05-02 12:10:50,582 - com.pages.BasePageClass -INFO - quit application
+2017-05-03 05:58:09,957 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-03 05:58:09,958 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-03 05:58:09,958 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-03 05:58:09,963 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-03 05:58:09,963 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-03 05:58:09,963 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-03 05:58:09,963 - com.helper.DriverFactory -INFO - MAC: FF initialized
+2017-05-03 05:58:12,579 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (190e85d9-f2a5-634d-91f8-1900e46624f6)
+2017-05-03 05:58:12,579 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (190e85d9-f2a5-634d-91f8-1900e46624f6)
+2017-05-03 05:58:12,579 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (ac729cae-c1fe-634a-84c5-f45354455e28)
+2017-05-03 05:58:12,579 - com.pages.BasePageClass -DEBUG - driver has been initialized as:  FirefoxDriver: firefox on ANY (ac729cae-c1fe-634a-84c5-f45354455e28)
+2017-05-03 05:58:12,580 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-03 05:58:12,580 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-03 05:58:12,580 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-03 05:58:12,580 - com.pages.BasePageClass -INFO - fetched all properties
+2017-05-03 05:58:12,580 - com.testcases.HomePageTests -DEBUG - Home page driver hashcode: 1921528738
+2017-05-03 05:58:12,580 - com.testcases.HomePageTests -DEBUG - Home page driver hashcode: 1921528738
+2017-05-03 05:58:12,580 - com.pages.FlightStatusPage -DEBUG - Flight status driver hashcode: 1864993183
+2017-05-03 05:58:12,580 - com.pages.FlightStatusPage -DEBUG - Flight status driver hashcode: 1864993183
+2017-05-03 05:58:12,588 - com.pages.FlightStatusPage -INFO - || Flight Status Page Test 1  >> pool-1-thread-1
+2017-05-03 05:58:12,588 - com.pages.FlightStatusPage -INFO - || Flight Status Page Test 1  >> pool-1-thread-1
+2017-05-03 05:58:12,589 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 05:58:12,589 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 05:58:12,589 - com.testcases.HomePageTests -INFO - || Home Page Test 1, thread: pool-1-thread-2
+2017-05-03 05:58:12,589 - com.testcases.HomePageTests -INFO - || Home Page Test 1, thread: pool-1-thread-2
+2017-05-03 05:58:12,589 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 05:58:12,589 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 05:59:04,198 - com.testcases.HomePageTests -INFO - || Home Page Test 1, thread: pool-1-thread-2
+2017-05-03 05:59:04,198 - com.testcases.HomePageTests -INFO - || Home Page Test 1, thread: pool-1-thread-2
+2017-05-03 05:59:04,198 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 05:59:04,198 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 05:59:16,094 - com.testcases.HomePageTests -INFO - || Home Page Test 1, thread: pool-1-thread-2
+2017-05-03 05:59:16,094 - com.testcases.HomePageTests -INFO - || Home Page Test 1, thread: pool-1-thread-2
+2017-05-03 05:59:16,095 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 05:59:16,095 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 05:59:28,746 - com.pages.FlightStatusPage -INFO - || Flight Status Page Test 1  >> pool-1-thread-1
+2017-05-03 05:59:28,746 - com.pages.FlightStatusPage -INFO - || Flight Status Page Test 1  >> pool-1-thread-1
+2017-05-03 05:59:28,746 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 05:59:28,746 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 05:59:35,840 - com.testcases.HomePageTests -INFO - || Home Page Test 1, thread: pool-1-thread-2
+2017-05-03 05:59:35,840 - com.testcases.HomePageTests -INFO - || Home Page Test 1, thread: pool-1-thread-2
+2017-05-03 05:59:35,840 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 05:59:35,840 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 05:59:44,174 - com.pages.FlightStatusPage -INFO - || Flight Status Page Test 1  >> pool-1-thread-1
+2017-05-03 05:59:44,174 - com.pages.FlightStatusPage -INFO - || Flight Status Page Test 1  >> pool-1-thread-1
+2017-05-03 05:59:44,175 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 05:59:44,175 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 05:59:49,055 - com.pages.BasePageClass -INFO - taking screenshot for failed test case: HomePageTests_verifyFlightStatusTab
+2017-05-03 05:59:49,055 - com.pages.BasePageClass -INFO - taking screenshot for failed test case: HomePageTests_verifyFlightStatusTab
+2017-05-03 05:59:50,256 - com.pages.BasePageClass -INFO - screenshot captured at: ./src/test/resources/screenshots/HomePageTests_verifyFlightStatusTab_20170503055949.png
+2017-05-03 05:59:50,256 - com.pages.BasePageClass -INFO - screenshot captured at: ./src/test/resources/screenshots/HomePageTests_verifyFlightStatusTab_20170503055949.png
+2017-05-03 05:59:50,257 - com.testcases.HomePageTests -INFO - || Home Page Test 2 >> pool-1-thread-2
+2017-05-03 05:59:50,257 - com.testcases.HomePageTests -INFO - || Home Page Test 2 >> pool-1-thread-2
+2017-05-03 05:59:50,257 - com.pages.BasePageClass -INFO - open url: https://www.asklaila.com/
+2017-05-03 05:59:50,257 - com.pages.BasePageClass -INFO - open url: https://www.asklaila.com/
+2017-05-03 05:59:51,093 - com.pages.BasePageClass -INFO - quit application
+2017-05-03 05:59:51,093 - com.pages.BasePageClass -INFO - quit application
+2017-05-03 05:59:54,988 - com.pages.FlightStatusPage -INFO - || Flight Status Page Test 1  >> pool-1-thread-1
+2017-05-03 05:59:54,988 - com.pages.FlightStatusPage -INFO - || Flight Status Page Test 1  >> pool-1-thread-1
+2017-05-03 05:59:54,990 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 05:59:54,990 - com.pages.BasePageClass -INFO - open url: https://book2.spicejet.com/
+2017-05-03 06:00:13,540 - com.pages.BasePageClass -INFO - taking screenshot for failed test case: FlightStatusPageTests_verifyDepartureArrivalCityTest
+2017-05-03 06:00:13,540 - com.pages.BasePageClass -INFO - taking screenshot for failed test case: FlightStatusPageTests_verifyDepartureArrivalCityTest
+2017-05-03 06:00:14,692 - com.pages.BasePageClass -INFO - screenshot captured at: ./src/test/resources/screenshots/FlightStatusPageTests_verifyDepartureArrivalCityTest_20170503060013.png
+2017-05-03 06:00:14,692 - com.pages.BasePageClass -INFO - screenshot captured at: ./src/test/resources/screenshots/FlightStatusPageTests_verifyDepartureArrivalCityTest_20170503060013.png
+2017-05-03 06:00:14,693 - com.pages.FlightStatusPage -INFO - || Flight Status Page Test 2  >> pool-1-thread-1
+2017-05-03 06:00:14,693 - com.pages.FlightStatusPage -INFO - || Flight Status Page Test 2  >> pool-1-thread-1
+2017-05-03 06:00:14,693 - com.pages.BasePageClass -INFO - open url: https://github.com/
+2017-05-03 06:00:14,693 - com.pages.BasePageClass -INFO - open url: https://github.com/
+2017-05-03 06:00:28,995 - com.pages.BasePageClass -INFO - quit application
+2017-05-03 06:00:28,995 - com.pages.BasePageClass -INFO - quit application

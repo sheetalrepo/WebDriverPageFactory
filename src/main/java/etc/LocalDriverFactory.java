@@ -11,16 +11,16 @@ class LocalDriverFactory {
         if (browserName.toLowerCase().contains("firefox")) {
         	String path = System.getProperty("user.dir");
 			System.setProperty("webdriver.gecko.driver", path + "/src/test/resources/drivers/geckodriver");
-            driver = new FirefoxDriver();
-            return driver;
+            return new FirefoxDriver();
         }
         if (browserName.toLowerCase().contains("internet")) {
             driver = new InternetExplorerDriver();
             return driver;
         }
         if (browserName.toLowerCase().contains("chrome")) {
-            driver = new ChromeDriver();
-            return driver;
+        	String path = System.getProperty("user.dir");
+    		System.setProperty("webdriver.chrome.driver", path + "/src/test/resources/drivers/chromedriver3");
+            return new ChromeDriver();
         }
         return driver;
     }
