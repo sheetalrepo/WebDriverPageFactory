@@ -7,8 +7,4 @@
 		</classes>
 	</test>
 
-	<listeners>
-		<listener class-name="com.listeners.TestListener" />
-		<listener class-name="com.listeners.RetryListener"/>
-	</listeners>
 </suite> 

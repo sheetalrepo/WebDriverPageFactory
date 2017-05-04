@@ -6,7 +6,9 @@ repo url: https://github.com/sheetalsingh/WebDriverPageFactory
 Option 1: command line: single/multiple xml can be given
 mvn clean test -DsuiteXmlFile=testng.xml,testngParallel.xml
 
-Option 2: run any single xml manually
+
+Option 2: to generate allure reports
+mvn clean test site -DsuiteXmlFile=testng.xml
 
 
 
@@ -21,6 +23,8 @@ todos:
 5. image comparison  - try Sikuli
 6. email report  - use jenkin
 7. Try to automate some good site like wiki or github
+
+8. run a demo project on double click bat file
 
 #issues:
 1. retry listener show skip cases count as well - P3 [maven report show correct result, no skipped cases shown]

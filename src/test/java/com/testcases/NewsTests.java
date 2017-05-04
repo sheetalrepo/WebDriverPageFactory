@@ -16,6 +16,15 @@ import com.pages.FlightStatusPage;
 import com.pages.HomePage;
 import com.pages.HotelsPage;
 
+import ru.yandex.qatools.allure.annotations.Description;
+import ru.yandex.qatools.allure.annotations.Features;
+import ru.yandex.qatools.allure.annotations.Severity;
+import ru.yandex.qatools.allure.annotations.Stories;
+import ru.yandex.qatools.allure.annotations.Title;
+import ru.yandex.qatools.allure.model.SeverityLevel;
+
+@Title("News Page Test Class")
+@Description("Description: Contains all News related test cases")
 public class NewsTests {
 
 	WebDriver driver;
@@ -45,6 +54,12 @@ public class NewsTests {
 		basePage.quit();
 	}
 
+	
+	@Features("News Feature 1")
+	@Stories("News Stories 1")
+	@Severity(SeverityLevel.CRITICAL)
+	@Title("Verify News 1")
+	@Description("Description: News 1 should render properly")
 	@Test
 	public void verifyNews1() throws InterruptedException, IOException, AWTException {
 		//basePage.startrecording();
@@ -58,6 +73,11 @@ public class NewsTests {
 		//basePage.stoprecording();
 	}
 
+	@Features("News Feature 2")
+	@Stories("News Stories 2")
+	@Severity(SeverityLevel.CRITICAL)
+	@Title("Verify News 2")
+	@Description("Description: News 2 should render properly")
 	@Test
 	public void verifyNews2() throws InterruptedException, IOException {
 		log.info("|| News Page Test 2, thread : " + Thread.currentThread().getName());
