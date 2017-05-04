@@ -1,6 +1,16 @@
 Webdriver + testng + pagefactory project
-
 repo url: https://github.com/sheetalsingh/WebDriverPageFactory
+
+
+#How to run framework:
+Option 1: command line: single/multiple xml can be given
+mvn clean test -DsuiteXmlFile=testng.xml,testngParallel.xml
+
+Option 2: run any single xml manually
+
+
+
+
 
 
 todos:
@@ -13,5 +23,5 @@ todos:
 7. Try to automate some good site like wiki or github
 
 #issues:
-1. retry listener show skip cases count as well - P3
+1. retry listener show skip cases count as well - P3 [maven report show correct result, no skipped cases shown]
 2. screenshot for particular id - done (some issue coming, not used in framework)  - P3

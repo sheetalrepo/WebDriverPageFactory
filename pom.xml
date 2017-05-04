@@ -11,6 +11,12 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<selenium.version>3.4.0</selenium.version>
+		<testng.version>6.9.10</testng.version>
+		<log4j.version>1.2.17</log4j.version>
+		<allure.version>1.4.23</allure.version>
+		<alluremvn.version>2.5</alluremvn.version>
+		<aspectj.version>1.8.9</aspectj.version>
 	</properties>
 
 	<dependencies>
@@ -21,14 +27,14 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.4.0</version>
+			<version>${selenium.version}</version>
 		</dependency>
 
 
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.9.10</version>
+			<version>${testng.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -37,17 +43,36 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
+			<version>${log4j.version}</version>
 		</dependency>
 
 
-		<!-- https://mvnrepository.com/artifact/org.monte/screen-recorder 
+		<!-- https://mvnrepository.com/artifact/ru.yandex.qatools.allure/allure-testng-adaptor -->
 		<dependency>
-			<groupId>org.monte</groupId>
-			<artifactId>screen-recorder</artifactId>
-			<version>0.7.7</version>
+			<groupId>ru.yandex.qatools.allure</groupId>
+			<artifactId>allure-testng-adaptor</artifactId>
+			<version>${allure.version}</version>
 		</dependency>
-		-->
+
+
+		<!-- https://mvnrepository.com/artifact/ru.yandex.qatools.allure/allure-maven-plugin -->
+		<dependency>
+			<groupId>ru.yandex.qatools.allure</groupId>
+			<artifactId>allure-maven-plugin</artifactId>
+			<version>${alluremvn.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.monte/screen-recorder <dependency> 
+			<groupId>org.monte</groupId> <artifactId>screen-recorder</artifactId> <version>0.7.7</version> 
+			</dependency> -->
+
+
+		<!-- https://mvnrepository.com/artifact/ru.sbtqa.tag/video-recorder -->
+		<dependency>
+			<groupId>ru.sbtqa.tag</groupId>
+			<artifactId>video-recorder</artifactId>
+			<version>1.0.6</version>
+		</dependency>
 
 	</dependencies>
 
@@ -71,6 +96,12 @@
 			</plugin>
 		</plugins>
 	</build>
+
+
+
+
+
+
 
 
 </project>

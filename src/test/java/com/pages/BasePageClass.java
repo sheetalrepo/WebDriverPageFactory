@@ -1,19 +1,5 @@
 package com.pages;
 
-import static org.monte.media.FormatKeys.EncodingKey;
-import static org.monte.media.FormatKeys.FrameRateKey;
-import static org.monte.media.FormatKeys.KeyFrameIntervalKey;
-import static org.monte.media.FormatKeys.MIME_AVI;
-import static org.monte.media.FormatKeys.MediaTypeKey;
-import static org.monte.media.FormatKeys.MimeTypeKey;
-import static org.monte.media.VideoFormatKeys.CompressorNameKey;
-import static org.monte.media.VideoFormatKeys.DepthKey;
-import static org.monte.media.VideoFormatKeys.ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE;
-import static org.monte.media.VideoFormatKeys.QualityKey;
-
-import java.awt.AWTException;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsEnvironment;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -24,10 +10,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.monte.media.Format;
-import org.monte.media.FormatKeys.MediaType;
-import org.monte.media.math.Rational;
-import org.monte.screenrecorder.ScreenRecorder;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -36,7 +18,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
-import org.testng.ITestResult;
 
 import com.helper.DriverFactory;
 import com.helper.DriverRepo;
@@ -57,8 +38,7 @@ public class BasePageClass {
 	Map<String, String> propertyMap;
 	String driverToRun = null;
 	Logger log = Logger.getLogger(BasePageClass.class);
-	ScreenRecorder screenRecorder;
-
+	
 	// singleton implemented
 	private static BasePageClass instance = null;
 
@@ -183,30 +163,30 @@ public class BasePageClass {
 		return element.getAttribute(attribute);
 	}
 
-	/**
-	 * method will start the screen recording
-	 */
-	public void startrecording() throws IOException, AWTException {
-		GraphicsConfiguration gc = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice()
-				.getDefaultConfiguration();
-
-		screenRecorder = new ScreenRecorder(gc, gc.getBounds(),
-				new Format(MediaTypeKey, MediaType.FILE, MimeTypeKey, MIME_AVI),
-				new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE,
-						CompressorNameKey, ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE, DepthKey, 24, FrameRateKey,
-						Rational.valueOf(15), QualityKey, 1.0f, KeyFrameIntervalKey, 15 * 60),
-				new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, "black", FrameRateKey, Rational.valueOf(30)),
-				null, new File(System.getProperty("user.dir") + "/src/test/resources/videos/"));
-		
-		screenRecorder.start();
-		
-	}
-
-	/**
-	 * method will stop the screen recording
-	 */
-	public void stoprecording() throws IOException {
-		screenRecorder.stop();
-	}
+//	/**
+//	 * method will start the screen recording
+//	 */
+//	public void startrecording() throws IOException, AWTException {
+//		GraphicsConfiguration gc = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice()
+//				.getDefaultConfiguration();
+//
+//		screenRecorder = new ScreenRecorder(gc, gc.getBounds(),
+//				new Format(MediaTypeKey, MediaType.FILE, MimeTypeKey, MIME_AVI),
+//				new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE,
+//						CompressorNameKey, ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE, DepthKey, 24, FrameRateKey,
+//						Rational.valueOf(15), QualityKey, 1.0f, KeyFrameIntervalKey, 15 * 60),
+//				new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, "black", FrameRateKey, Rational.valueOf(30)),
+//				null, new File(System.getProperty("user.dir") + "/src/test/resources/videos/"));
+//		
+//		screenRecorder.start();
+//		
+//	}
+//
+//	/**
+//	 * method will stop the screen recording
+//	 */
+//	public void stoprecording() throws IOException {
+//		screenRecorder.stop();
+//	}
 
 }
