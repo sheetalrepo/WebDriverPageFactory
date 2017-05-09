@@ -32,9 +32,9 @@ public class TestListener implements ITestListener {
 		String testname = result.getName().toString().trim();
 		
 		try {
-			//driver = BasePageClass.getInstance().getDriver();
 			driver = ThreadLocalDriver.getDriver();
-			BasePageClass.getInstance().getScreenshot(driver, testclass, testname);
+			String path = BasePageClass.getInstance().getScreenshot(driver, testclass, testname);
+			BasePageClass.attachScreenShotInAllureReport(path);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

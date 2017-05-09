@@ -9,7 +9,7 @@ mvn clean test -DsuiteXmlFile=testng.xml,testngParallel.xml
 
 Option 2: to generate allure reports
 mvn clean test site -DsuiteXmlFile=testng.xml
-
+mvn clean test site -DsuiteXmlFile=testngParallel.xml
 
 
 

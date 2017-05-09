@@ -8,12 +8,24 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.listeners.TestListener;
 import com.pages.BasePageClass;
 import com.pages.FlightStatusPage;
 import com.pages.HomePage;
 
+import ru.yandex.qatools.allure.annotations.Description;
+import ru.yandex.qatools.allure.annotations.Features;
+import ru.yandex.qatools.allure.annotations.Severity;
+import ru.yandex.qatools.allure.annotations.Stories;
+import ru.yandex.qatools.allure.annotations.Title;
+import ru.yandex.qatools.allure.model.SeverityLevel;
+
+@Title("Flight Page Test Class")
+@Description("Description: Contains all Flight related test cases")
+@Listeners(TestListener.class)
 public class FlightStatusPageTests {
 
 	WebDriver driver;
@@ -41,27 +53,38 @@ public class FlightStatusPageTests {
 		basePage.quit();
 	}
 
+	@Features("Flight Feature 1")
+	@Stories("Flight Stories 1")
+	@Severity(SeverityLevel.CRITICAL)
+	@Title("Verify Flight 1")
+	@Description("Description: Flight 1 should render properly")
 	@Test
 	public void verifyDepartureArrivalCityTest() throws MalformedURLException, InterruptedException {
 		log.info("|| Flight Status Page Test 1  >> " + Thread.currentThread().getName());
-		basePage.get("https://book2.spicejet.com/");
-
-		homePage = new HomePage(driver);
-		homePage.isHomePageLoaded();
-		homePage.clickFlighStatusTab();
+//		basePage.get("https://book2.spicejet.com/");
+//
+//		homePage = new HomePage(driver);
+//		homePage.isHomePageLoaded();
+//		homePage.clickFlighStatusTab();
+//
+//		Thread.sleep(2000);
+//		flightStatusPage = new FlightStatusPage(driver);
+//		flightStatusPage.isFlightStatusPageLoaded();
+//		flightStatusPage.setDepartureCity(1);
+//		flightStatusPage.setArrivalCity(5);
 
 		Thread.sleep(2000);
-		flightStatusPage = new FlightStatusPage(driver);
-		flightStatusPage.isFlightStatusPageLoaded();
-		flightStatusPage.setDepartureCity(1);
-		flightStatusPage.setArrivalCity(5);
-
-		Thread.sleep(2000);
-//		basePage.get("https://www.wikipedia.org/");
+		basePage.get("https://www.wikipedia.org/");
 		Assert.assertTrue(false);
 		Thread.sleep(2000);
 	}
 
+	
+	@Features("Flight Feature 1")
+	@Stories("Flight Stories 2")
+	@Severity(SeverityLevel.CRITICAL)
+	@Title("Verify Flight 2")
+	@Description("Description: Flight 2 should render properly")
 	@Test
 	public void verifyPromotionalBannerCount() throws MalformedURLException, InterruptedException {
 		log.info("|| Flight Status Page Test 2  >> " + Thread.currentThread().getName());
@@ -76,6 +99,7 @@ public class FlightStatusPageTests {
 //		Assert.assertEquals(flightStatusPage.getPromotionalBannersCount(), 6, "Banner count is wrong");
 
 		basePage.get("https://github.com/");
+		Thread.sleep(2000);
 		Assert.assertTrue(true);
 	}
 

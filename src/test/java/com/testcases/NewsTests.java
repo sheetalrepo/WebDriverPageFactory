@@ -9,8 +9,10 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.listeners.TestListener;
 import com.pages.BasePageClass;
 import com.pages.FlightStatusPage;
 import com.pages.HomePage;
@@ -25,6 +27,7 @@ import ru.yandex.qatools.allure.model.SeverityLevel;
 
 @Title("News Page Test Class")
 @Description("Description: Contains all News related test cases")
+@Listeners(TestListener.class)
 public class NewsTests {
 
 	WebDriver driver;
@@ -62,18 +65,18 @@ public class NewsTests {
 	@Description("Description: News 1 should render properly")
 	@Test
 	public void verifyNews1() throws InterruptedException, IOException, AWTException {
-		//basePage.startrecording();
-		
 		log.info("|| News Page Test 1, thread : " + Thread.currentThread().getName());
-		//basePage.get("https://www.bing.com/");
 		basePage.get(map.get("server"));
-		Assert.assertTrue(false);
+		BasePageClass.attachScreenShotInAllureReport(basePage.getScreenshot(driver, "NewsTests", "AAA"));
+		basePage.get("https://www.wikipedia.org/");
+		BasePageClass.attachScreenShotInAllureReport(basePage.getScreenshot(driver, "NewsTests", "BBB"));
+		Assert.assertTrue(true);
 		Thread.sleep(2000);
 		
 		//basePage.stoprecording();
 	}
 
-	@Features("News Feature 2")
+	@Features("News Feature 1")
 	@Stories("News Stories 2")
 	@Severity(SeverityLevel.CRITICAL)
 	@Title("Verify News 2")
@@ -81,11 +84,8 @@ public class NewsTests {
 	@Test
 	public void verifyNews2() throws InterruptedException, IOException {
 		log.info("|| News Page Test 2, thread : " + Thread.currentThread().getName());
-		
 		basePage.get("http://www.msn.com/en-in/");
-		
-		Assert.assertTrue(true);
-		//basePage.getScreenshot(driver, "NewsTests", "verifyNews2");
+		Assert.assertTrue(false);
 		Thread.sleep(2000);
 	}
 	

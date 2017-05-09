@@ -1,12 +1,18 @@
 package com.pages;
 
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
+import javax.imageio.ImageIO;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -23,6 +29,8 @@ import com.helper.DriverFactory;
 import com.helper.DriverRepo;
 import com.helper.PropertyFileReader;
 import com.helper.ThreadLocalDriver;
+
+import ru.yandex.qatools.allure.annotations.Attachment;
 
 import org.apache.commons.io.FileUtils;
 
@@ -114,7 +122,7 @@ public class BasePageClass {
 	 * Need to pass driver, as null pointer coming in case we don't pass driver
 	 * from TestListeners class
 	 */
-	public void getScreenshot(WebDriver driver, String testclass, String testname) throws IOException {
+	public String getScreenshot(WebDriver driver, String testclass, String testname) throws IOException {
 
 		log.info("taking screenshot for failed test case: " + testclass + "_" + testname);
 		String filePath = "./src/test/resources/screenshots/";
@@ -130,8 +138,41 @@ public class BasePageClass {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		return path+".png";
 	}
 
+	
+	
+	
+	@Attachment(value = "{0}", type = "image/png")
+	public static byte[] attachScreenShotInAllureReport(String attachmentName) {
+		
+		System.out.println(">>>>>>>>>>>>>> "+attachmentName);
+		
+		byte [] res = null;
+		
+	    try {
+	    	BufferedImage image = ImageIO.read(new File(attachmentName));
+	    	ByteArrayOutputStream baos = new ByteArrayOutputStream(); 
+	    	ImageIO.write(image, "png", baos); 
+	    	res=baos.toByteArray();
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	    return res;
+	}
+
+	private static byte[] toByteArray(File file) throws IOException {
+	    return Files.readAllBytes(Paths.get(file.getPath()));
+	}	
+	
+	
+	
+	
+	
+	
+	
 	public Wait<WebDriver> setupWait(WebDriver driver, Integer timeout) {
 		return new FluentWait<WebDriver>(driver).withTimeout(timeout, TimeUnit.SECONDS)
 				.pollingEvery(500, TimeUnit.MILLISECONDS).ignoring(NoSuchElementException.class)
