@@ -65,15 +65,15 @@ public class HomePageTests {
 	@Test
 	public void verifyFlightStatusTab() throws MalformedURLException, InterruptedException {
 		log.info("|| Home Page Test 1, thread: " + Thread.currentThread().getName());
-//		 basePage.get("https://book2.spicejet.com/");
-//		 homePage = new HomePage(driver);
-//		 homePage.isHomePageLoaded();
-//		 homePage.clickFlighStatusTab();
-//		 Thread.sleep(2000);
-//		 flightStatusPage = new FlightStatusPage(driver);
-//		 Assert.assertTrue(flightStatusPage.isFlightStatusPageLoaded(),"Flight Status page not loaded");
-//		 Thread.sleep(2000);
-		//basePage.get(map.get("server"));  
+		basePage.get("https://book2.spicejet.com/");
+		homePage = new HomePage(driver);
+		homePage.isHomePageLoaded();
+		homePage.clickFlighStatusTab();
+		Thread.sleep(2000);
+		flightStatusPage = new FlightStatusPage(driver);
+		Assert.assertTrue(flightStatusPage.isFlightStatusPageLoaded(), "Flight Status page not loaded");
+		Thread.sleep(2000);
+		basePage.get(map.get("server"));  
 		basePage.get("https://www.google.com/");
 		Assert.assertTrue(true);
 		Thread.sleep(2000);

@@ -61,17 +61,17 @@ public class FlightStatusPageTests {
 	@Test
 	public void verifyDepartureArrivalCityTest() throws MalformedURLException, InterruptedException {
 		log.info("|| Flight Status Page Test 1  >> " + Thread.currentThread().getName());
-//		basePage.get("https://book2.spicejet.com/");
-//
-//		homePage = new HomePage(driver);
-//		homePage.isHomePageLoaded();
-//		homePage.clickFlighStatusTab();
-//
-//		Thread.sleep(2000);
-//		flightStatusPage = new FlightStatusPage(driver);
-//		flightStatusPage.isFlightStatusPageLoaded();
-//		flightStatusPage.setDepartureCity(1);
-//		flightStatusPage.setArrivalCity(5);
+		basePage.get("https://book2.spicejet.com/");
+
+		homePage = new HomePage(driver);
+		homePage.isHomePageLoaded();
+		homePage.clickFlighStatusTab();
+
+		Thread.sleep(2000);
+		flightStatusPage = new FlightStatusPage(driver);
+		flightStatusPage.isFlightStatusPageLoaded();
+		flightStatusPage.setDepartureCity(1);
+		flightStatusPage.setArrivalCity(5);
 
 		Thread.sleep(2000);
 		basePage.get("https://www.wikipedia.org/");
@@ -85,7 +85,7 @@ public class FlightStatusPageTests {
 	@Severity(SeverityLevel.CRITICAL)
 	@Title("Verify Flight 2")
 	@Description("Description: Flight 2 should render properly")
-	@Test
+	//@Test
 	public void verifyPromotionalBannerCount() throws MalformedURLException, InterruptedException {
 		log.info("|| Flight Status Page Test 2  >> " + Thread.currentThread().getName());
 

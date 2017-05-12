@@ -16,14 +16,17 @@ import javax.imageio.ImageIO;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.helper.DriverFactory;
 import com.helper.DriverRepo;
@@ -46,7 +49,8 @@ public class BasePageClass {
 	Map<String, String> propertyMap;
 	String driverToRun = null;
 	Logger log = Logger.getLogger(BasePageClass.class);
-	
+	WebDriverWait wait;
+
 	// singleton implemented
 	private static BasePageClass instance = null;
 
@@ -138,96 +142,107 @@ public class BasePageClass {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		return path+".png";
+
+		return path + ".png";
 	}
 
-	
-	
-	
 	@Attachment(value = "{0}", type = "image/png")
 	public static byte[] attachScreenShotInAllureReport(String attachmentName) {
-		
-		System.out.println(">>>>>>>>>>>>>> "+attachmentName);
-		
-		byte [] res = null;
-		
-	    try {
-	    	BufferedImage image = ImageIO.read(new File(attachmentName));
-	    	ByteArrayOutputStream baos = new ByteArrayOutputStream(); 
-	    	ImageIO.write(image, "png", baos); 
-	    	res=baos.toByteArray();
-	    } catch (Exception e) {
-	        e.printStackTrace();
-	    }
-	    return res;
+		// log.info("taking screenshot for failed test case: ");
+		byte[] res = null;
+
+		try {
+			BufferedImage image = ImageIO.read(new File(attachmentName));
+			ByteArrayOutputStream baos = new ByteArrayOutputStream();
+			ImageIO.write(image, "png", baos);
+			res = baos.toByteArray();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return res;
 	}
 
 	private static byte[] toByteArray(File file) throws IOException {
-	    return Files.readAllBytes(Paths.get(file.getPath()));
-	}	
+		return Files.readAllBytes(Paths.get(file.getPath()));
+	}
+
+	
+
+	/**
+	 * Common explicit wait methods; 
+	 * Generic can be used be most of the cases
+	 * 
+	 * wait time need to be picked from properties file
+	 */
+	public void waitForVisibilityOfElement(WebElement element) {
+		wait = new WebDriverWait(ThreadLocalDriver.getDriver(), 10);
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+
+	/**
+	 * Common explicit wait methods
+	 */
+	public void waitForClickablityOfElement(WebElement element) {
+		wait = new WebDriverWait(ThreadLocalDriver.getDriver(), 10);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
+
+	/**
+	 * todo: How to use By locator with PF - Issue in PF sol: use only expected
+	 * cond which req web element
+	 * 
+	 * Instead of declaring separate wait method and calling them in test cases
+	 * We have added Expected condition in every action methods e.g. click,
+	 * sendkeys etc
+	 */
+	public void waitForPresenceOfElement(By locator, int timeout) {
+		WebDriverWait wait = new WebDriverWait(driver, timeout);
+		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+
+	}
 	
 	
-	
-	
-	
-	
-	
-	public Wait<WebDriver> setupWait(WebDriver driver, Integer timeout) {
+	/**
+	 * todo: not using as of now
+	 */
+	public Wait<WebDriver> setupFluentWait(WebDriver driver, Integer timeout) {
+		// get driver using threadlocal
 		return new FluentWait<WebDriver>(driver).withTimeout(timeout, TimeUnit.SECONDS)
 				.pollingEvery(500, TimeUnit.MILLISECONDS).ignoring(NoSuchElementException.class)
 				.ignoring(StaleElementReferenceException.class);
 	}
 
+	public void click(WebElement element) {
+		waitForClickablityOfElement(element);
+		element.click();
+	}
+
 	public void sendKeys(WebElement element, String keyword) {
+		waitForVisibilityOfElement(element);
 		element.clear();
 		element.sendKeys(keyword);
 	}
 
-	public void click(WebElement element) {
-		element.click();
-	}
-
 	public boolean isPageLoaded(WebElement element) {
+		waitForVisibilityOfElement(element);
 		return element.isDisplayed();
 	}
 
 	public boolean isElementPresent(WebElement element) {
+		waitForVisibilityOfElement(element);
 		return element.isDisplayed();
 	}
 
 	public String getText(WebElement element) {
+		waitForVisibilityOfElement(element);
 		return element.getText();
 	}
 
 	public String getAttributeValue(WebElement element, String attribute) {
+		waitForVisibilityOfElement(element);
 		return element.getAttribute(attribute);
 	}
+	
 
-//	/**
-//	 * method will start the screen recording
-//	 */
-//	public void startrecording() throws IOException, AWTException {
-//		GraphicsConfiguration gc = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice()
-//				.getDefaultConfiguration();
-//
-//		screenRecorder = new ScreenRecorder(gc, gc.getBounds(),
-//				new Format(MediaTypeKey, MediaType.FILE, MimeTypeKey, MIME_AVI),
-//				new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE,
-//						CompressorNameKey, ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE, DepthKey, 24, FrameRateKey,
-//						Rational.valueOf(15), QualityKey, 1.0f, KeyFrameIntervalKey, 15 * 60),
-//				new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, "black", FrameRateKey, Rational.valueOf(30)),
-//				null, new File(System.getProperty("user.dir") + "/src/test/resources/videos/"));
-//		
-//		screenRecorder.start();
-//		
-//	}
-//
-//	/**
-//	 * method will stop the screen recording
-//	 */
-//	public void stoprecording() throws IOException {
-//		screenRecorder.stop();
-//	}
 
 }

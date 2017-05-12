@@ -16,16 +16,14 @@ mvn clean test site -DsuiteXmlFile=testngParallel.xml
 
 
 todos:
-1. Fluentwait/ Wait
-2. Reporting - extent/allure?
+1. Fileseparator, separate all path in one class  - done in branch - "nitin"
+2. Reporting - extent
 3. Remote server handling
-4. Fileseparator, separate all path in one class
 5. image comparison  - try Sikuli
 6. email report  - use jenkin
-7. Try to automate some good site like wiki or github
 
-8. run a demo project on double click bat file
 
 #issues:
+0. double logging issue
 1. retry listener show skip cases count as well - P3 [maven report show correct result, no skipped cases shown]
 2. screenshot for particular id - done (some issue coming, not used in framework)  - P3

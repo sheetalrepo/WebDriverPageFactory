@@ -2,10 +2,13 @@ package com.pages;
 
 import java.net.MalformedURLException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 public class HomePage extends BasePageClass {
 
@@ -16,8 +19,9 @@ public class HomePage extends BasePageClass {
 	
 	WebDriver driver;
 	
+	@CacheLookup
 	@FindBy (className="flight_status")
-	static WebElement flightStatusTab;
+	public static WebElement flightStatusTab;
 	
 	@FindBy (className = "holiday-packages")
 	static WebElement holidayPackagesTab; 
@@ -29,7 +33,6 @@ public class HomePage extends BasePageClass {
 	static WebElement footerHeading; 
 	
 	
-	
 	//default constructor
 	public HomePage()  {
 		//super();
@@ -39,6 +42,7 @@ public class HomePage extends BasePageClass {
 	public HomePage(WebDriver driver) throws MalformedURLException {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		//PageFactory.initElements(new AjaxElementLocatorFactory(driver, 10), this);
 	}
 	
 

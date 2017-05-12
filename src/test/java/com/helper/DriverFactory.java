@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 /**
@@ -18,7 +19,6 @@ public class DriverFactory {
 	public static WebDriver createInstance(String browserName) {
 		WebDriver driver = null;
 		if (browserName.toLowerCase().contains("firefox")) {
-			
 			String current_os = System.getProperty("os.name");
 			if (current_os.equals("Mac OS X")) {
 				log.info("MAC: FF initialized");
