@@ -72,7 +72,7 @@ public class WikiHomePageTest {
 		Thread.sleep(3000);
 		//We should have switched to search page and then can get the url
 		//Assert.assertTrue(driver.getCurrentUrl().contains("World"),"url mismatch");
-		Assert.assertFalse(driver.getCurrentUrl().contains("World"),"url mismatch");
+		Assert.assertTrue(driver.getCurrentUrl().contains("World"),"url mismatch");
 		
 	}
 	

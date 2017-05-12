@@ -84,7 +84,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!--run: mvn clean test -DsuiteXmlFile=src/test/resources/suites/criticaltest.xml -->
-						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+						<suiteXmlFile>testng2.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
 
