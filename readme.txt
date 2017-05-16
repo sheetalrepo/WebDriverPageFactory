@@ -8,12 +8,12 @@ mvn clean test -DsuiteXmlFile=testng.xml,testngParallel.xml
 
 
 Option 2: to generate allure reports
-mvn clean test site -DsuiteXmlFile=testng.xml
+mvn clean test site -DsuiteXmlFile=testngWiki.xml
 mvn clean test site -DsuiteXmlFile=testngParallel.xml
 
 
 
-
+mvn clean test site -DsuiteXmlFile=testng2.xml
 
 todos:
 1. Fileseparator, separate all path in one class  - done in branch - "nitin"
