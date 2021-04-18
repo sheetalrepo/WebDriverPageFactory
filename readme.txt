@@ -1,4 +1,4 @@
-Webdriver + testng + pagefactory project
+Webdriver + testng + pagefactory project + allure
 repo url: https://github.com/sheetalsingh/WebDriverPageFactory
 
 
@@ -24,6 +24,6 @@ todos:
 
 
 #issues:
-0. double logging issue
+0. double logging issue - done | commented log4j.logger.com property
 1. retry listener show skip cases count as well - P3 [maven report show correct result, no skipped cases shown]
 2. screenshot for particular id - done (some issue coming, not used in framework)  - P3
